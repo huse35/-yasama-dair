@@ -31,8 +31,8 @@ async function syncComments() {
 
         submissions.forEach(sub => {
             // Formdaki gizli "page" alanına bakarak dili tespit ediyoruz
-            const page = sub.data.page || '';
-            const lang = page.includes('.en.html') || page === 'index.en.html' ? 'en' : (page.includes('.de.html') || page === 'index.de.html' ? 'de' : 'tr');
+            const page = String(sub.data.page || '').toLowerCase();
+            const lang = page.includes('en') ? 'en' : (page.includes('de') ? 'de' : 'tr');
 
             const comment = {
                 name: sub.data.name || (lang === 'tr' ? 'Ziyaretçi' : (lang === 'de' ? 'Besucher' : 'Visitor')),
