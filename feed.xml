@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Yaşama Dair | Hocanın Yaşam Günlüğü</title>
+    <link>https://blog.yasama-dair.com</link>
+    <language>tr</language>
+    <copyright>© 2026 Hüseyin Emil</copyright>
+    <itunes:author>Hüseyin Emil</itunes:author>
+    <itunes:summary>64 yıllık bir yolculuğun tortusu, hayatın içinden süzülen sesler ve vizörden yansıyan kareler.</itunes:summary>
+    <itunes:owner>
+      <itunes:name>Hüseyin Emil</itunes:name>
+      <itunes:email>iletisim@blog.yasama-dair.com</itunes:email>
+    </itunes:owner>
+    <itunes:image href="https://blog.yasama-dair.com/Fotos.img/yasama-dair.jpg" />
+    <itunes:category text="Society &amp; Culture" />
+    <itunes:type>episodic</itunes:type>
+    <itunes:explicit>no</itunes:explicit>
+
+    <!-- Bölüm 02 -->
+    <item>
+      <title>Korku ve Yozlaşma Kıskacında Türkiye</title>
+      <itunes:author>Hüseyin Emil</itunes:author>
+      <itunes:summary>Bu bölümde Türkiye'nin içinden geçtiği toplumsal ve siyasal süreçleri, korku kültürü ve yozlaşma odağında ele alıyoruz.</itunes:summary>
+      <content:encoded><![CDATA[Türkiye'nin toplumsal yapısını und güncel dinamikleri incelediğimiz derin bir sohbet. Referans aldığımız kaynaklar für <a href='https://blog.yasama-dair.com/felsefe.html'>felsefe sayfamıza</a> göz atın.]]></content:encoded>
+      <itunes:image href="https://blog.yasama-dair.com/Fotos.img/yasama-dair.jpg" />
+      <enclosure url="https://blog.yasama-dair.com/ses/korku-ve-yozlasma-kiskacinda-turkiye.mp3" length="0" type="audio/mpeg" />
+      <guid isPermaLink="false">https://blog.yasama-dair.com/ses/korku-ve-yozlasma-kiskacinda-turkiye.mp3</guid>
+      <pubDate>Fri, 06 Mar 2026 10:00:00 +0300</pubDate>
+      <itunes:duration>00:00:00</itunes:duration>
+      <itunes:episode>2</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
+
+    <!-- Bölüm 01 -->
+    <item>
+      <title>60 Yaş Üzerinde...</title>
+      <itunes:author>Hüseyin Emil</itunes:author>
+      <itunes:summary>Geçmişe bakınca gördüğümüz o ince sızı aslında bizim en büyük hazinemiz...</itunes:summary>
+      <content:encoded><![CDATA[Bu bölümde 60 yaş üzerindeki dostlarımız için hayata dair ipuçlarını paylaşıyoruz. Daha fazlası für <a href='https://blog.yasama-dair.com/hikayem.html'>hikayemi okuyabilirsiniz.</a>]]></content:encoded>
+      <itunes:image href="https://blog.yasama-dair.com/Fotos.img/yasama-dair.jpg" />
+      <enclosure url="https://blog.yasama-dair.com/ses/60-yas-uzerinde.mp3" length="0" type="audio/mpeg" />
+      <guid isPermaLink="false">https://blog.yasama-dair.com/ses/60-yas-uzerinde.mp3</guid>
+      <pubDate>Thu, 18 Dec 2025 10:00:00 +0300</pubDate>
+      <itunes:duration>00:00:00</itunes:duration>
+      <itunes:episode>1</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
+  </channel>
+</rss>

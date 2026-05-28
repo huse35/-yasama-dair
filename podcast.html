@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Podcast | Yaşama Dair</title>
+    <meta name="description" content="Hayatın içinden süzülen sesler ve samimi anlatılar. Hocanın sesli notlarını keşfedin." />
+    <meta property="og:title" content="Sesli Notlar & Podcast | Yaşama Dair" />
+    <meta property="og:description" content="Bir dost meclisi sıcaklığında dinleyebileceğiniz sesli kayıtlar." />
+    <meta property="og:image" content="https://blog.yasama-dair.com/Fotos.img/yasama-dair.jpg" />
+    <link rel="alternate" type="application/rss+xml" title="Podcast RSS" href="https://blog.yasama-dair.com/feed.xml" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page">
+    <nav id="navbar">
+        <a href="index.html" class="logo">YAŞAMA DAİR</a>
+        <div class="nav-links">
+            <a href="hikayem.html">Hikayem</a>
+            <a href="fotograflar.html">Fotoğraflar</a>
+            <a href="felsefe.html">Felsefe</a>
+            <a href="haberler.html">Haberler</a>
+            <a href="podcast.html">Podcast</a>
+            <a href="videolar.html">Videolar</a>
+            <a href="iletisim.html">İletişim</a>
+        </div>
+    </nav>
+
+    <section id="podcasts">
+        <div class="section-head">
+            <span class="tag">DİNLE</span>
+            <h2>Sesli Notlar & Podcast</h2>
+            <p>Gözlerinizi kapatın ve bir dost meclisinde olduğunuzu hayal edin.</p>
+        </div>
+        <div class="grid-container" id="podcastGrid"></div>
+    </section>
+
+    <section id="comments">
+        <div class="section-head">
+            <span class="tag">KATIL</span>
+            <h2>Yorum Bırak</h2>
+            <p>Her yorum bir bilgidir; yeter ki saygıyla söylensin.</p>
+        </div>
+        <!-- Onaylanan Yorumlar Buraya Gelecek -->
+        <div id="commentDisplayList" class="comment-display-container"></div>
+
+        <div id="loadMoreContainer" class="load-more-comments">
+            <button id="btnLoadMore" class="btn-load-more">Daha Fazla Yükle</button>
+        </div>
+
+        <form class="comment-form" name="yorumlar" method="POST" action="tesekkurler.html" data-netlify="true"
+            netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="yorumlar" />
+            <input type="hidden" name="page" value="podcast.html" />
+            <p class="honeypot">
+                <label>Bu alanı boş bırakın: <input name="bot-field" /></label>
+            </p>
+            <div class="form-grid">
+                <label>
+                    Adınız (isteğe bağlı)
+                    <input name="name" type="text" autocomplete="name" />
+                </label>
+                <label>
+                    E-posta (isteğe bağlı)
+                    <input name="email" type="email" autocomplete="email" />
+                </label>
+            </div>
+            <label>
+                Yorumunuz
+                <textarea name="message" rows="6" required></textarea>
+            </label>
+            <label class="checkbox">
+                <input name="consent" type="checkbox" required />
+                Saygı çerçevesinde yazdım; hakaret/küfür içermiyor.
+            </label>
+            <button class="btn-primary" type="submit">Gönder</button>
+            <p class="comment-note">Not: Yorumlar önce moderasyondan geçer.</p>
+        </form>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-grid">
+            <div>
+                <a href="index.html" class="footer-logo">YAŞAMA DAİR</a>
+                <p class="footer-desc">Bu sayfa, bir ömrün samimi bir paylaşıma dönüştüğü noktadır. Hoş geldiniz biladerim,
+                    sefalar getirdiniz.</p>
+            </div>
+            <div class="footer-links">
+                <h4>HIZLI MENÜ</h4>
+                <ul>
+                    <li><a href="hikayem.html">Hikayem</a></li>
+                    <li><a href="felsefe.html">Felsefe</a></li>
+                    <li><a href="haberler.html">Haberler</a></li>
+                    <li><a href="podcast.html">Podcast</a></li>
+                    <li><a href="videolar.html">Videolar</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>SOSYAL MEDYA</h4>
+                <ul>
+                    <li><a href="https://www.youtube.com/@huseyinemil35" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                    <li><a href="https://www.instagram.com/huseyinemil35" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/huseyin.emil.3" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                    <li><a href="#" aria-label="Spotify (eklenecek)">Spotify</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Yaşama Dair | Hocanın Dijital Mirası | Tüm Hakları Saklıdır
+        </div>
+    </footer>
+
+    <script src="content.js"></script>
+    <script src="app.js"></script>
+    <script src="nav.js"></script>
+</body>
+
+</html>

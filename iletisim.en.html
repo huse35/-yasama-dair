@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | About Life</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page">
+    <nav id="navbar">
+        <a href="index.en.html" class="logo">ABOUT LIFE</a>
+        <div class="nav-links">
+            <a href="hikayem.en.html">My Story</a>
+            <a href="fotograflar.en.html">Photos</a>
+            <a href="felsefe.en.html">Philosophy</a>
+            <a href="haberler.en.html">News</a>
+            <a href="podcast.en.html">Podcast</a>
+            <a href="videolar.en.html">Videos</a>
+            <a href="iletisim.en.html">Contact</a>
+            <a href="iletisim.html">TR</a>
+        </div>
+    </nav>
+
+    <section id="contact">
+        <div class="section-head">
+            <span class="tag">CONNECT</span>
+            <h2>Contact</h2>
+            <p>You can reach out through social accounts or contribute with your comments.</p>
+        </div>
+
+        <div class="grid-container">
+            <div class="premium-card">
+                <div class="card-body">
+                    <span class="tag">Social</span>
+                    <h3 class="podcast-title">Accounts</h3>
+                    <p class="card-desc">You can subscribe on YouTube for new content.</p>
+                    <p class="card-desc">
+                        <a class="card-link" href="https://www.youtube.com/@huseyinemil35" target="_blank">YouTube</a>
+                        ·
+                        <a class="card-link" href="https://www.instagram.com/huseyinemil35" target="_blank">Instagram</a>
+                        ·
+                        <a class="card-link" href="https://www.facebook.com/huseyin.emil.3" target="_blank">Facebook</a>
+                    </p>
+                </div>
+            </div>
+            <div class="premium-card">
+                <div class="card-body">
+                    <span class="tag">Note</span>
+                    <h3 class="podcast-title">Email</h3>
+                    <p class="card-desc">You can reach me at <a href="mailto:sisiyi889900@gmail.com">sisiyi889900@gmail.com</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="comments">
+        <div class="section-head">
+            <span class="tag">JOIN</span>
+            <h2>Leave a Comment</h2>
+            <p>Every comment is knowledge; as long as it is said with respect.</p>
+        </div>
+        <form class="comment-form" name="comments" method="POST" action="tesekkurler.en.html" data-netlify="true"
+            netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="comments" />
+            <input type="hidden" name="page" value="iletisim.en.html" />
+            <p class="honeypot">
+                <label>Leave this field empty: <input name="bot-field" /></label>
+            </p>
+            <div class="form-grid">
+                <label>Name<input name="name" type="text" /></label>
+                <label>Email<input name="email" type="email" /></label>
+            </div>
+            <label>Your Comment<textarea name="message" rows="6" required></textarea></label>
+            <label class="checkbox">
+                <input name="consent" type="checkbox" required />
+                I wrote within the bounds of respect; it does not contain insults/curses.
+            </label>
+            <button class="btn-primary" type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-grid">
+            <div>
+                <a href="index.en.html" class="footer-logo">ABOUT LIFE</a>
+            </div>
+            <div class="footer-links">
+                <h4>QUICK MENU</h4>
+                <ul>
+                    <li><a href="hikayem.en.html">My Story</a></li>
+                    <li><a href="felsefe.en.html">Philosophy</a></li>
+                    <li><a href="haberler.en.html">News</a></li>
+                    <li><a href="podcast.en.html">Podcast</a></li>
+                    <li><a href="videolar.en.html">Videos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; 2026 About Life | All Rights Reserved</div>
+    </footer>
+
+    <script src="content.en.js"></script>
+    <script src="app.js"></script>
+    <script src="nav.js"></script>
+</body>
+</html>
