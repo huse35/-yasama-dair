@@ -7,12 +7,12 @@ const axios = require('axios'); // 'npm install axios' yapmanız gerekebilir
  */
 
 const NETLIFY_TOKEN = process.env.NETLIFY_AUTH_TOKEN;
-// Not: Eğer alan adı çalışmazsa Netlify panelindeki 'API ID'yi (UUID formatında) buraya yazın.
-const SITE_ID = 'blog.yasama-dair.com'; 
+// ÖNEMLİ: Buraya Netlify panelinden (Site Settings > API ID) aldığınız UUID kodunu yazın.
+const SITE_ID = '4af313...'; // Burayı paneldeki gerçek kodla doldur bruder.
 
 async function syncComments() {
     try {
-        console.log('Netlify üzerinden onaylanmış yorumlar çekiliyor...');
+        console.log(`📡 [${new Date().toLocaleTimeString()}] Netlify yorumları senkronize ediliyor...`);
         
         // Sitenizdeki tüm form gönderimlerini çekiyoruz
         const response = await axios.get(
@@ -32,7 +32,7 @@ async function syncComments() {
         submissions.forEach(sub => {
             // Formdaki gizli "page" alanına bakarak dili tespit ediyoruz
             const page = String(sub.data.page || '').toLowerCase();
-            const lang = page.includes('en') ? 'en' : (page.includes('de') ? 'de' : 'tr');
+            const lang = page.includes('.en.') || page.includes('.en') ? 'en' : (page.includes('.de.') || page.includes('.de') ? 'de' : 'tr');
 
             const comment = {
                 name: sub.data.name || (lang === 'tr' ? 'Ziyaretçi' : (lang === 'de' ? 'Besucher' : 'Visitor')),

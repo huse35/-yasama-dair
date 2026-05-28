@@ -259,7 +259,13 @@
       ? window.YASAMA_DAIR_DYNAMIC_COMMENTS[currentLang] 
       : [];
 
-    const allItems = [...dynamicItems, ...staticItems];
+    // Tüm yorumları birleştir ve tarihe göre (en yeni en üstte) kesin sırala
+    const allItems = [...dynamicItems, ...staticItems].sort((a, b) => {
+      const dateA = a.date ? new Date(a.date).getTime() : 0;
+      const dateB = b.date ? new Date(b.date).getTime() : 0;
+      return dateB - dateA;
+    });
+
     const visibleItems = allItems.slice(0, visibleCommentsCount);
 
     list.innerHTML = visibleItems
