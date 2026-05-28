@@ -7,7 +7,6 @@ const axios = require('axios'); // 'npm install axios' yapmanız gerekebilir
  */
 
 const NETLIFY_TOKEN = process.env.NETLIFY_AUTH_TOKEN;
-const SITE_ID = 'blog.yasama-dair.com'; // Sizin Netlify site kimliğiniz
 // Not: Eğer alan adı çalışmazsa Netlify panelindeki 'API ID'yi (UUID formatında) buraya yazın.
 const SITE_ID = 'blog.yasama-dair.com'; 
 
@@ -33,7 +32,6 @@ async function syncComments() {
         submissions.forEach(sub => {
             // Formdaki gizli "page" alanına bakarak dili tespit ediyoruz
             const page = sub.data.page || '';
-            const lang = page.includes('.en.html') ? 'en' : (page.includes('.de.html') ? 'de' : 'tr');
             const lang = page.includes('.en.html') || page === 'index.en.html' ? 'en' : (page.includes('.de.html') || page === 'index.de.html' ? 'de' : 'tr');
 
             const comment = {
