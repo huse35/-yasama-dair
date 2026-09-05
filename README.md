@@ -17,7 +17,7 @@ npm run check
 ## İçerikleri düzenleme
 
 - `content.js`: Türkçe yazılar, podcast bilgileri, fotoğraflar, haberler ve onaylanmış yorumlar.
-- `content.en.js`, `content.de.js`: Aynı içeriklerin İngilizce ve Almanca sürümleri. Kayıtların dili Türkçe olarak açıkça belirtilir.
+- `content.en.js`, `content.de.js`: Aynı içeriklerin İngilizce ve Almanca sürümleri. Her bölüm kendi dilindeki ses dosyasını kullanabilir; `audioLabel` kayıt dilini ve varsa yapay seslendirmeyi belirtir. Bu alan yoksa Türkçe kayıt etiketi kullanılır.
 - `writings/`: Uzun yazılar. Çevrilmiş yazılarda `.en.txt` ve `.de.txt` dosyalarını kullanın.
 - `site-copy.js`: Menü, sayfa başlıkları, açıklamalar ve form metinleri.
 - `scripts/build-pages.js`: Ortak HTML şablonları ve sayfa düzenleri.
@@ -31,7 +31,11 @@ HTML sayfaları üretilir; kalıcı değişiklikleri şablonlara veya içerik do
 1. Ses dosyasını `ses/` klasörüne koyun. Mevcut oynatıcı ve RSS akışı MP3 kullanır.
 2. Üç içerik dosyasındaki `podcasts` listelerine kaydı ekleyin; başlık, açıklama, kapak, ses dosyası ve tarihi belirtin.
 3. `notes` düz metindir. HTML bağlantısı eklemeyin.
-4. Derleme gerçek dosya boyutunu ve kayıt süresini hesaplar. Eksik ses dosyası veya geçersiz kayıt varsa derleme başarısız olur.
+4. Derleme tüm dillerdeki farklı ses dosyalarının gerçek boyutlarını ve kayıt sürelerini hesaplar. Eksik ses dosyası veya geçersiz kayıt varsa derleme başarısız olur.
+
+### Sesli çeviriler
+
+“60 Yaş Üzerinde” bölümünün Almanca ve İngilizce sesli çevirileri ilgili dil sayfalarında oynatılır. Türkçe asıl kayıt ve Türkçe RSS akışı korunur. Diğer bölümün kaydı Türkçedir. Kaynak dökümü, çeviri metinleri, kullanılan sesler ve yeniden üretim bilgileri `podcast-scripts/README.md` içindedir.
 
 ### Yazı veya fotoğraf eklemek
 

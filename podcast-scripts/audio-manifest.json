@@ -1,0 +1,18 @@
+{
+  "de": {
+    "file": "ses/60-yas-uzerinde.de.mp3",
+    "durationSeconds": 369.502041,
+    "bytes": 2956502,
+    "sha256": "dc65ef0690ab7b70ff1096a9416719328f6eed04dd1bb80f380b89697411cfdd",
+    "integratedLoudnessLUFS": -19.46,
+    "truePeakDBTP": -2.27
+  },
+  "en": {
+    "file": "ses/60-yas-uzerinde.en.mp3",
+    "durationSeconds": 398.915918,
+    "bytes": 3191811,
+    "sha256": "b913bf4a637ad1344e70f9891c853aba4c525a205d5a21c1890a1258a1e1e4ec",
+    "integratedLoudnessLUFS": -19.48,
+    "truePeakDBTP": -2.08
+  }
+}

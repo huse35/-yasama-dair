@@ -15,9 +15,10 @@ window.YASAMA_DAIR_CONTENT = {
       "title": "Über 60 Jahre alt...",
       "description": "Der feine Schmerz, den wir beim Rückblick empfinden, ist eigentlich unser größter Schatz...",
       "cover": "Fotos.img/60-yas-uzerinde.jpg",
-      "audio": "ses/60-yas-uzerinde.mp3",
+      "audio": "ses/60-yas-uzerinde.de.mp3",
+      "audioLabel": "Deutsch · KI-Sprecherstimme",
       "date": "2025-12-18",
-      "notes": "Ein Gespräch über das Leben nach 60, Erinnerungen und Erfahrungen."
+      "notes": "Ein Gespräch über das Leben nach 60, Erinnerungen und Erfahrungen. Deutsche Übersetzung mit einer KI-Sprecherstimme. Die Aufnahme endet wie das türkische Original mitten im letzten Satz."
     },
     {
       "featured": false,

@@ -15,9 +15,10 @@ window.YASAMA_DAIR_CONTENT = {
       "title": "Over 60 Years Old...",
       "description": "The subtle ache we see when looking back is actually our greatest treasure...",
       "cover": "Fotos.img/60-yas-uzerinde.jpg",
-      "audio": "ses/60-yas-uzerinde.mp3",
+      "audio": "ses/60-yas-uzerinde.en.mp3",
+      "audioLabel": "English · AI narration",
       "date": "2025-12-18",
-      "notes": "A conversation about life after 60, memories and experience."
+      "notes": "A conversation about life after 60, memories and experience. English translation with an AI narrator. Like the Turkish original, the recording ends in the middle of the final sentence."
     },
     {
       "featured": false,

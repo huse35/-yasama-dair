@@ -1,0 +1,19 @@
+{
+  "engine": "piper-tts 1.8.0",
+  "runtime": "onnxruntime 1.29.0",
+  "network": "Blocked by a verified process-local seccomp filter before runtime import",
+  "voices": {
+    "de": {
+      "name": "de_DE-thorsten-high",
+      "model_sha256": "9df1c43c61149ef9b39e618e2b861fbe41e1fcea9390b2dac62e8761573ea4f1",
+      "model_bytes": 113895201,
+      "config_sha256": "6de734444e4c3f9e33b7ebe2746dbc19b71e85f613e79c65acf623200b99a76a"
+    },
+    "en": {
+      "name": "en_US-ljspeech-high",
+      "model_sha256": "5d4f08ba6a2a48c44592eed3ce56bf85e9de3dd4e20df90541ae68a8310c029a",
+      "model_bytes": 114199011,
+      "config_sha256": "7e1f4634af596d83cca997fb7a931ba80b70f8a316a2655ee69c55365e0ace14"
+    }
+  }
+}
