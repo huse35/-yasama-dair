@@ -1,107 +1,232 @@
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Felsefe | Yaşama Dair</title>
-    <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Birlikte düşünelim. | Yaşama Dair</title>
+<meta name="description" content="İnsana, zamana ve birlikte yaşamaya dair kısa düşünceler ve uzun sorular.">
+<meta name="theme-color" content="#f7f5f0">
+<link rel="canonical" href="https://blog.yasama-dair.com/felsefe.html">
+<link rel="alternate" hreflang="tr" href="https://blog.yasama-dair.com/felsefe.html">
+<link rel="alternate" hreflang="en" href="https://blog.yasama-dair.com/felsefe.en.html">
+<link rel="alternate" hreflang="de" href="https://blog.yasama-dair.com/felsefe.de.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.yasama-dair.com/felsefe.html">
+<meta property="og:title" content="Birlikte düşünelim. | Yaşama Dair">
+<meta property="og:description" content="İnsana, zamana ve birlikte yaşamaya dair kısa düşünceler ve uzun sorular.">
+<meta property="og:url" content="https://blog.yasama-dair.com/felsefe.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Yaşama Dair">
+<link rel="alternate" type="application/rss+xml" title="Yaşama Dair Podcast RSS" href="feed.xml">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Birlikte düşünelim. | Yaşama Dair","description":"İnsana, zamana ve birlikte yaşamaya dair kısa düşünceler ve uzun sorular.","url":"https://blog.yasama-dair.com/felsefe.html","inLanguage":"tr","isPartOf":{"@type":"WebSite","name":"Yaşama Dair","url":"https://blog.yasama-dair.com"},"author":{"@type":"Person","name":"Hüseyin Emil"}}</script>
+<script src="nav.js" defer>
+</script>
+<script src="app.js" defer>
+</script>
 </head>
-
-<body class="page">
-    <nav id="navbar">
-        <a href="index.html" class="logo">YAŞAMA DAİR</a>
-        <div class="nav-links">
-            <a href="hikayem.html">Hikayem</a>
-            <a href="fotograflar.html">Fotoğraflar</a>
-            <a href="felsefe.html">Felsefe</a>
-            <a href="haberler.html">Haberler</a>
-            <a href="podcast.html">Podcast</a>
-            <a href="videolar.html">Videolar</a>
-            <a href="iletisim.html">İletişim</a>
-        </div>
-    </nav>
-
-    <section id="philosophy">
-        <div class="section-head">
-            <span class="tag">DÜŞÜN</span>
-            <h2>Felsefe</h2>
-            <p>Kısa düşünceler, hayata dair notlar ve içten sorular.</p>
-        </div>
-        <div class="grid-container" id="philosophyGrid"></div>
-    </section>
-
-    <section id="comments">
-        <div class="section-head">
-            <span class="tag">KATIL</span>
-            <h2>Yorum Bırak</h2>
-            <p>Her yorum bir bilgidir; yeter ki saygıyla söylensin.</p>
-        </div>
-        <form class="comment-form" name="yorumlar" method="POST" action="tesekkurler.html" data-netlify="true"
-            netlify-honeypot="bot-field">
-            <input type="hidden" name="form-name" value="yorumlar" />
-            <input type="hidden" name="page" value="felsefe.html" />
-            <p class="honeypot">
-                <label>Bu alanı boş bırakın: <input name="bot-field" /></label>
-            </p>
-            <div class="form-grid">
-                <label>
-                    Adınız (isteğe bağlı)
-                    <input name="name" type="text" autocomplete="name" />
-                </label>
-                <label>
-                    E-posta (isteğe bağlı)
-                    <input name="email" type="email" autocomplete="email" />
-                </label>
-            </div>
-            <label>
-                Yorumunuz
-                <textarea name="message" rows="6" required></textarea>
-            </label>
-            <label class="checkbox">
-                <input name="consent" type="checkbox" required />
-                Saygı çerçevesinde yazdım; hakaret/küfür içermiyor.
-            </label>
-            <button class="btn-primary" type="submit">Gönder</button>
-            <p class="comment-note">Not: Yorumlar önce moderasyondan geçer.</p>
-        </form>
-    </section>
-
-    <footer id="footer">
-        <div class="footer-grid">
-            <div>
-                <a href="index.html" class="footer-logo">YAŞAMA DAİR</a>
-                <p class="footer-desc">Bu sayfa, bir ömrün samimi bir paylaşıma dönüştüğü noktadır. Hoş geldiniz biladerim,
-                    sefalar getirdiniz.</p>
-            </div>
-            <div class="footer-links">
-                <h4>HIZLI MENÜ</h4>
-                <ul>
-                    <li><a href="hikayem.html">Hikayem</a></li>
-                    <li><a href="felsefe.html">Felsefe</a></li>
-                    <li><a href="haberler.html">Haberler</a></li>
-                    <li><a href="podcast.html">Podcast</a></li>
-                    <li><a href="videolar.html">Videolar</a></li>
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h4>SOSYAL MEDYA</h4>
-                <ul>
-                    <li><a href="https://www.youtube.com/@huseyinemil35" target="_blank" rel="noopener noreferrer">YouTube</a></li>
-                    <li><a href="https://www.instagram.com/huseyinemil35" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                    <li><a href="https://www.facebook.com/huseyin.emil.3" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-                    <li><a href="#" aria-label="Spotify (eklenecek)">Spotify</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            &copy; 2026 Yaşama Dair | Hocanın Dijital Mirası | Tüm Hakları Saklıdır
-        </div>
-    </footer>
-
-    <script src="content.js"></script>
-    <script src="app.js"></script>
-    <script src="nav.js"></script>
+<body class="inner-page" data-page="felsefe" data-media-error="Kayıt oynatılamadı. Aşağıdaki oynatıcıyı veya ses dosyası bağlantısını kullanabilirsiniz.">
+<a class="skip-link" href="#main">İçeriğe geç</a>
+<header class="site-header" id="top">
+<div class="masthead wrap">
+<a class="brand" href="index.html" aria-label="Yaşama Dair — Ana sayfa">yaşama dair<span>.</span>
+</a>
+<p class="journal-name">Hüseyin Emil’in yaşam günlüğü</p>
+<div class="header-actions">
+<div class="languages" role="group" aria-label="Dil seçimi">
+<a href="felsefe.html" lang="tr" hreflang="tr" aria-label="Türkçe" aria-current="true">TR</a>
+<a href="felsefe.en.html" lang="en" hreflang="en" aria-label="English">EN</a>
+<a href="felsefe.de.html" lang="de" hreflang="de" aria-label="Deutsch">DE</a>
+</div>
+<button class="menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false">
+<svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M4 7h16M4 12h16M4 17h16"/>
+</svg>
+<span>Menü</span>
+</button>
+</div>
+</div>
+<div class="navigation-shell">
+<nav class="site-navigation wrap" id="site-navigation" aria-label="Sayfalar">
+<a href="index.html">Ana sayfa</a>
+<a href="hikayem.html">Hikâyem</a>
+<a href="felsefe.html" aria-current="page">Felsefe</a>
+<a href="podcast.html">Podcast</a>
+<a href="fotograflar.html">Fotoğraflar</a>
+<a href="videolar.html">Videolar</a>
+<a href="haberler.html">Haberler</a>
+<a href="iletisim.html">İletişim</a>
+</nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<header class="page-heading wrap">
+<div class="breadcrumb">
+<a href="index.html">Ana sayfa</a>
+<span aria-hidden="true">/</span>
+<span>Felsefe</span>
+</div>
+<p class="eyebrow">YAŞAMA DAİR · Hüseyin Emil</p>
+<h1>Birlikte düşünelim.</h1>
+<p>İnsana, zamana ve birlikte yaşamaya dair kısa düşünceler ve uzun sorular.</p>
+</header>
+<section class="writing-layout wrap section">
+<nav class="writing-index" aria-label="Bütün yazılar">
+<p class="eyebrow">Defterden sayfalar</p>
+<a href="#yazi-1">
+<span>01</span>Paylaşmak</a>
+<a href="#yazi-2">
+<span>02</span>Bugün</a>
+<a href="#yazi-3">
+<span>03</span>Bilmediğini Bilmek</a>
+<a href="#yazi-4">
+<span>04</span>Kendini ve Başkalarını Anlamak</a>
+</nav>
+<div class="writing-list">
+<article class="writing" id="yazi-1">
+<div class="metadata">
+<time datetime="2026-03-05">5 Mart 2026</time>
+<span>1 dk okuma</span>
+</div>
+<h2>Paylaşmak</h2>
+<p>İnsan, içindekini sakladıkça ağırlaşır; paylaştıkça hafifler. Bir söz, bir hatıra, bir fotoğraf… Hepsi bize yük değil; doğru kişiye değince emek olur.</p>
+<p class="article-author">Hüseyin Emil</p>
+</article>
+<article class="writing" id="yazi-2">
+<div class="metadata">
+<time datetime="2026-03-05">5 Mart 2026</time>
+<span>1 dk okuma</span>
+</div>
+<h2>Bugün</h2>
+<p>Yarın dediğimiz şey çoğu zaman bahanedir. Bugün küçük bir adım atmak, büyük bir pişmanlığı önler.</p>
+<p class="article-author">Hüseyin Emil</p>
+</article>
+<article class="writing" id="yazi-3">
+<div class="metadata">
+<time datetime="2026-03-06">6 Mart 2026</time>
+<span>1 dk okuma</span>
+</div>
+<h2>Bilmediğini Bilmek</h2>
+<p>Sokrates’e atfedilen “Bir şey bilmediğimi biliyorum” sözü, aslında şunu anlatır: İnsan, bilmediğini fark ettiğinde düşünmeye başlar. Sokrates’in savunduğu bilgelik; her konuda bildiğini sanmak değil, “Bilmediğim şeyler var” diyebilecek cesareti taşımaktır. Çünkü kimi insanlar, bilmedikleri hâlde biliyormuş gibi konuşur; asıl tehlike de buradadır.</p>
+<p class="article-author">Hüseyin Emil</p>
+</article>
+<article class="writing" id="yazi-4">
+<div class="metadata">
+<time datetime="2026-03-06">6 Mart 2026</time>
+<span>2 dk okuma</span>
+</div>
+<h2>Kendini ve Başkalarını Anlamak</h2>
+<p>Merhaba arkadaşlar, bugün sizlerle insan, inanç ve sorgulama üzerine düşündüğüm bazı fikirleri paylaşmak istiyorum. Hayatın küçük detaylarından büyük düşüncelere uzanan bu yolculukta, insanın kendini ve dünyayı anlama çabasını birlikte keşfedeceğiz.</p>
+<p>İnsan doğası gereği istekleri bitmeyen bir varlıktır. Hayatta mutlu olabilecek çok şey varken, çoğu zaman küçük detaylardan mutsuz olmayı seçer. Bir kişi, yıllar boyunca bu gerçeğin farkında olmuş, hayata dair gözlemlerini derinlemesine sorgulamıştır. Sadece kendi düşüncelerini değil, insanın doğasını ve toplumsal yapıların etkilerini de mercek altına almıştır.</p>
+<p>Yaş ilerledikçe, hayatın nasıl yaşanacağı hâlâ anlaşılmamış bir sır gibi görünür; gelecek endişeleri ve ömrün sınırlılığı üzerine düşünceler sürekli zihni meşgul eder. Düşüncelerini en yakınıyla bile paylaşamamak, insanın kendi iç dünyasında bir yalnızlık hissetmesine yol açar. Buna rağmen başkalarına yardım etmek, sosyal bağlarını sürdürmek istenir; bildiklerini paylaşmak ise çoğu zaman yanlış anlaşılma korkusuyla engellenir.</p>
+<p>Geçmişte çeşitli filozoflarla ve düşünürlerle tanışmış, farklı kaynaklardan inançları sorgulamıştır. İnançların insan tarafından yaratıldığı sonucuna varmış, fakat bu konuyu paylaşmak çoğu zaman zordur. İnsanlar hemen yargılar, tartışmayı kapatır. İnanç sistemlerinin çoğu, tarih boyunca güç ve korku aracı olarak kullanılmış; insanların kabul ettirilmeye çalışıldığı görülmüştür. Dinlerle doğrudan bir sorun yoktur; sorun, inançların toplumsal baskı ve savaşlar için araçsallaştırılmasıdır.</p>
+<p>Böyle bir bağlamda Sokrates’in yöntemi, düşüncelerini ve sorgulama biçimini modellemek için ilham vericidir. Karşısındakini konuşturmak, merak diliyle sorular sormak, çelişkileri suçlamadan göstermek ve sonuçları kişinin kendi keşfine bırakmak; insanı savunmaya değil, düşünmeye davet eden bir yaklaşımı temsil eder. Bu yöntem, hem karşıdakine saygı gösterir hem de düşüncelerin güvenle paylaşılabileceği bir alan yaratır.</p>
+<p>Sonuç olarak, insanın yolu kendi farkındalığını artırmak, merakla ve vicdanla yaklaşmak, sorgulamaktan vazgeçmemek üzerine kuruludur. Kendini ve başkalarını anlamaya çalışmak, küçük adımlarla cesaret kazanmak ve bu süreçte yalnız hissetmemek, hayatın en değerli keşiflerindendir.</p>
+<p class="article-author">Hüseyin Emil</p>
+</article>
+</div>
+</section>
+<section class="comment-section section wrap" id="comments">
+<div class="comment-intro">
+<p class="eyebrow">İletişim</p>
+<h2>Sohbete siz de katılın.</h2>
+<p>Sözünüz burada kıymetli. Düşüncenizi saygıyla paylaşın.</p>
+<p class="small-text">Özel bir mesaj için e-posta gönderebilirsiniz.</p>
+<a class="text-link" href="mailto:sisiyi889900@gmail.com">Doğrudan yazın<svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M5 12h14m-6-6 6 6-6 6"/>
+</svg>
+</a>
+</div>
+<form class="comment-form" name="yorumlar" method="POST" action="/tesekkurler.html" data-netlify="true" netlify-honeypot="bot-field">
+<input type="hidden" name="form-name" value="yorumlar">
+<input type="hidden" name="page" value="felsefe.html">
+<input type="hidden" name="language" value="tr">
+<p class="honeypot" aria-hidden="true">
+<label>Leave this blank <input name="bot-field" tabindex="-1" autocomplete="off">
+</label>
+</p>
+<div class="form-grid">
+<label>Adınız <span>(isteğe bağlı)</span>
+<input name="name" type="text" autocomplete="name" maxlength="100">
+</label>
+<label>E-posta <span>(isteğe bağlı)</span>
+<input name="email" type="email" autocomplete="email" maxlength="254">
+</label>
+</div>
+<label>Mesajınız<textarea name="message" rows="5" required minlength="3" maxlength="5000">
+</textarea>
+</label>
+<label class="checkbox">
+<input name="consent" value="yes" type="checkbox" required>
+<span>Yorumumun incelendikten sonra adımla birlikte yayımlanmasını kabul ediyorum.</span>
+</label>
+<button class="button" type="submit" data-sending="Gönderiliyor…">Mesajı gönder<svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M5 12h14m-6-6 6 6-6 6"/>
+</svg>
+</button>
+<p class="small-text form-note">Yorumlar yayımlanmadan önce incelenir. E-posta adresiniz yayımlanmaz.</p>
+</form>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap footer-top">
+<div class="footer-intro">
+<a class="brand" href="index.html">yaşama dair<span>.</span>
+</a>
+<p>Yaşanmışlıkları, soruları ve küçük anları paylaşmak için bir yer.</p>
+<span class="signature">Hüseyin Emil</span>
+</div>
+<div>
+<h2 class="eyebrow">Sayfalar</h2>
+<ul class="footer-links">
+<li>
+<a href="hikayem.html">Hikâyem</a>
+</li>
+<li>
+<a href="felsefe.html">Felsefe</a>
+</li>
+<li>
+<a href="podcast.html">Podcast</a>
+</li>
+<li>
+<a href="fotograflar.html">Fotoğraflar</a>
+</li>
+<li>
+<a href="videolar.html">Videolar</a>
+</li>
+<li>
+<a href="haberler.html">Haberler</a>
+</li>
+<li>
+<a href="iletisim.html">İletişim</a>
+</li>
+</ul>
+</div>
+<div>
+<h2 class="eyebrow">Takipte kalın</h2>
+<ul class="footer-links">
+<li>
+<a href="https://www.youtube.com/@huseyinemil35" target="_blank" rel="noopener noreferrer">YouTube</a>
+</li>
+<li>
+<a href="https://www.instagram.com/huseyinemil35" target="_blank" rel="noopener noreferrer">Instagram</a>
+</li>
+<li>
+<a href="https://www.facebook.com/huseyin.emil.3" target="_blank" rel="noopener noreferrer">Facebook</a>
+</li>
+<li>
+<a href="feed.xml">Podcast RSS</a>
+</li>
+<li>
+<a href="mailto:sisiyi889900@gmail.com">Doğrudan yazın</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="wrap footer-bottom">
+<p>© 2026 Hüseyin Emil · Yaşama Dair</p>
+<a href="#top">Başa dön ↑</a>
+</div>
+</footer>
 </body>
-
 </html>

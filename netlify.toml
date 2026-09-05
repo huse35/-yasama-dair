@@ -1,3 +1,22 @@
 [build]
   command = "npm run build"
-  publish = "."
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/ses/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/Fotos.img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"

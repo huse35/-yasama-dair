@@ -1,48 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Yaşama Dair | Hocanın Yaşam Günlüğü</title>
     <link>https://blog.yasama-dair.com</link>
+    <description>Hüseyin Emil’den hayata dair hikâyeler, düşünceler ve sesli notlar.</description>
     <language>tr</language>
     <copyright>© 2026 Hüseyin Emil</copyright>
+    <atom:link href="https://blog.yasama-dair.com/feed.xml" rel="self" type="application/rss+xml" />
     <itunes:author>Hüseyin Emil</itunes:author>
-    <itunes:summary>64 yıllık bir yolculuğun tortusu, hayatın içinden süzülen sesler ve vizörden yansıyan kareler.</itunes:summary>
-    <itunes:owner>
-      <itunes:name>Hüseyin Emil</itunes:name>
-      <itunes:email>iletisim@blog.yasama-dair.com</itunes:email>
-    </itunes:owner>
+    <itunes:summary>Bir ömrün içinden hikâyeler, düşünceler ve sesli notlar.</itunes:summary>
+    <itunes:owner><itunes:name>Hüseyin Emil</itunes:name><itunes:email>iletisim@yasama-dair.com</itunes:email></itunes:owner>
     <itunes:image href="https://blog.yasama-dair.com/Fotos.img/yasama-dair.jpg" />
     <itunes:category text="Society &amp; Culture" />
-    <itunes:type>episodic</itunes:type>
-    <itunes:explicit>no</itunes:explicit>
-
-    <!-- Bölüm 02 -->
+    <itunes:type>episodic</itunes:type><itunes:explicit>no</itunes:explicit>
     <item>
       <title>Korku ve Yozlaşma Kıskacında Türkiye</title>
+      <description>Türkiye’nin toplumsal yapısı, korku ve yozlaşma üzerine düşünceler.</description>
+      <link>https://blog.yasama-dair.com/podcast.html#episode-audio-0</link>
       <itunes:author>Hüseyin Emil</itunes:author>
-      <itunes:summary>Bu bölümde Türkiye'nin içinden geçtiği toplumsal ve siyasal süreçleri, korku kültürü ve yozlaşma odağında ele alıyoruz.</itunes:summary>
-      <content:encoded><![CDATA[Türkiye'nin toplumsal yapısını und güncel dinamikleri incelediğimiz derin bir sohbet. Referans aldığımız kaynaklar für <a href='https://blog.yasama-dair.com/felsefe.html'>felsefe sayfamıza</a> göz atın.]]></content:encoded>
+      <itunes:summary>Türkiye’nin toplumsal yapısı, korku ve yozlaşma üzerine düşünceler.</itunes:summary>
       <itunes:image href="https://blog.yasama-dair.com/Fotos.img/yasama-dair.jpg" />
-      <enclosure url="https://blog.yasama-dair.com/ses/korku-ve-yozlasma-kiskacinda-turkiye.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://blog.yasama-dair.com/ses/korku-ve-yozlasma-kiskacinda-turkiye.mp3" length="12958751" type="audio/mpeg" />
       <guid isPermaLink="false">https://blog.yasama-dair.com/ses/korku-ve-yozlasma-kiskacinda-turkiye.mp3</guid>
-      <pubDate>Fri, 06 Mar 2026 10:00:00 +0300</pubDate>
-      <itunes:duration>00:00:00</itunes:duration>
+      <pubDate>Fri, 06 Mar 2026 07:00:00 GMT</pubDate>
+      <itunes:duration>810</itunes:duration>
       <itunes:episode>2</itunes:episode>
       <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
-
-    <!-- Bölüm 01 -->
     <item>
       <title>60 Yaş Üzerinde...</title>
+      <description>Geçmişe bakınca gördüğümüz o ince sızı aslında bizim en büyük hazinemiz...</description>
+      <link>https://blog.yasama-dair.com/podcast.html#episode-audio-1</link>
       <itunes:author>Hüseyin Emil</itunes:author>
       <itunes:summary>Geçmişe bakınca gördüğümüz o ince sızı aslında bizim en büyük hazinemiz...</itunes:summary>
-      <content:encoded><![CDATA[Bu bölümde 60 yaş üzerindeki dostlarımız için hayata dair ipuçlarını paylaşıyoruz. Daha fazlası für <a href='https://blog.yasama-dair.com/hikayem.html'>hikayemi okuyabilirsiniz.</a>]]></content:encoded>
       <itunes:image href="https://blog.yasama-dair.com/Fotos.img/yasama-dair.jpg" />
-      <enclosure url="https://blog.yasama-dair.com/ses/60-yas-uzerinde.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://blog.yasama-dair.com/ses/60-yas-uzerinde.mp3" length="6780717" type="audio/mpeg" />
       <guid isPermaLink="false">https://blog.yasama-dair.com/ses/60-yas-uzerinde.mp3</guid>
-      <pubDate>Thu, 18 Dec 2025 10:00:00 +0300</pubDate>
-      <itunes:duration>00:00:00</itunes:duration>
+      <pubDate>Thu, 18 Dec 2025 07:00:00 GMT</pubDate>
+      <itunes:duration>424</itunes:duration>
       <itunes:episode>1</itunes:episode>
       <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
