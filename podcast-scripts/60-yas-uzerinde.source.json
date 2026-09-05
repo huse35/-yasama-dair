@@ -1,0 +1,589 @@
+{
+  "source": "ses/60-yas-uzerinde.mp3",
+  "language": "tr",
+  "method": "faster-whisper small, local CPU transcription; no VAD or ONNX Runtime",
+  "sourceEndsMidSentence": true,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 5.0,
+      "text": "bugünkü derinlemesini incelememize hoş geldiniz.",
+      "avg_logprob": -0.1828624080209171,
+      "no_speech_prob": 0.043136078864336014
+    },
+    {
+      "start": 5.0,
+      "end": 16.0,
+      "text": "Elimizdeki kaynak 60 yaş ve üzerindekiler için oldukça iddialı bir yaşam felsefesi sunuyor aslında.",
+      "avg_logprob": -0.1828624080209171,
+      "no_speech_prob": 0.043136078864336014
+    },
+    {
+      "start": 16.0,
+      "end": 19.0,
+      "text": "Evet, birine bir yol haritası gibi.",
+      "avg_logprob": -0.1828624080209171,
+      "no_speech_prob": 0.043136078864336014
+    },
+    {
+      "start": 19.0,
+      "end": 25.0,
+      "text": "Kesinlikle finansal kararlardan sosyal ilişkilere,",
+      "avg_logprob": -0.1828624080209171,
+      "no_speech_prob": 0.043136078864336014
+    },
+    {
+      "start": 25.0,
+      "end": 35.0,
+      "text": "kişisel bakımdan zihinsel sağlığa kadar yani hayatın yeni dönemini en iyi şekilde nasıl geçirebiliriz.",
+      "avg_logprob": -0.11623596944166033,
+      "no_speech_prob": 0.41068631410598755
+    },
+    {
+      "start": 35.0,
+      "end": 42.0,
+      "text": "Bunun üzerine bir dizi tavsiye var, bizim de misyonumuz bu tavsiyelerin ardındaki mantığını",
+      "avg_logprob": -0.11623596944166033,
+      "no_speech_prob": 0.41068631410598755
+    },
+    {
+      "start": 42.0,
+      "end": 49.0,
+      "text": "ve belki de hepimizin hayatına dokunabilecek o pratik uygulamaları birlikte deşifre etmek.",
+      "avg_logprob": -0.11623596944166033,
+      "no_speech_prob": 0.41068631410598755
+    },
+    {
+      "start": 49.0,
+      "end": 55.0,
+      "text": "Kesinlikle zaten bu metni benim için ilginç kılan şey de bu.",
+      "avg_logprob": -0.08125289862877444,
+      "no_speech_prob": 0.24980078637599945
+    },
+    {
+      "start": 55.0,
+      "end": 60.0,
+      "text": "Yaşlanmayı böyle pasif kabullenilmesi gereken bir süreç olarak görmüyor.",
+      "avg_logprob": -0.08125289862877444,
+      "no_speech_prob": 0.24980078637599945
+    },
+    {
+      "start": 60.0,
+      "end": 63.0,
+      "text": "Aktif bir süreç olarak mı ele alıyor?",
+      "avg_logprob": -0.08125289862877444,
+      "no_speech_prob": 0.24980078637599945
+    },
+    {
+      "start": 63.0,
+      "end": 64.0,
+      "text": "Tam olarak öyle.",
+      "avg_logprob": -0.08125289862877444,
+      "no_speech_prob": 0.24980078637599945
+    },
+    {
+      "start": 64.0,
+      "end": 72.0,
+      "text": "Bilinçli kararlar ve hatta cesur bir zihniyet değişimi gerektiren aktif bir dönem olarak bakıyor.",
+      "avg_logprob": -0.08125289862877444,
+      "no_speech_prob": 0.24980078637599945
+    },
+    {
+      "start": 72.0,
+      "end": 75.0,
+      "text": "Yani sadece bir ne yapmalı listesi değil bu.",
+      "avg_logprob": -0.08125289862877444,
+      "no_speech_prob": 0.24980078637599945
+    },
+    {
+      "start": 75.0,
+      "end": 76.0,
+      "text": "Anladım.",
+      "avg_logprob": -0.0977934825988043,
+      "no_speech_prob": 0.28706490993499756
+    },
+    {
+      "start": 76.0,
+      "end": 80.0,
+      "text": "Daha çok nasıl düşünmeli üzerine kafa yoruyor.",
+      "avg_logprob": -0.0977934825988043,
+      "no_speech_prob": 0.28706490993499756
+    },
+    {
+      "start": 80.0,
+      "end": 83.0,
+      "text": "Metnin ana fikri şu.",
+      "avg_logprob": -0.0977934825988043,
+      "no_speech_prob": 0.28706490993499756
+    },
+    {
+      "start": 83.0,
+      "end": 89.0,
+      "text": "Bu dönem bir bitiş değil, kurallarını sizin koyduğunuz yepyeni bir başlangıç.",
+      "avg_logprob": -0.0977934825988043,
+      "no_speech_prob": 0.28706490993499756
+    },
+    {
+      "start": 89.0,
+      "end": 95.0,
+      "text": "O zaman hadi bu yeni başlangıcın en sarsıcı tavsiyesiyle başlayalım.",
+      "avg_logprob": -0.0977934825988043,
+      "no_speech_prob": 0.28706490993499756
+    },
+    {
+      "start": 95.0,
+      "end": 99.0,
+      "text": "Metin doğrudan ve hiç lafı dolandırmadan diyor ki,",
+      "avg_logprob": -0.0977934825988043,
+      "no_speech_prob": 0.28706490993499756
+    },
+    {
+      "start": 99.0,
+      "end": 104.0,
+      "text": "60 ile ölüm arası biriktirdiğiniz parayı kullanma zamanıdır.",
+      "avg_logprob": -0.0977934825988043,
+      "no_speech_prob": 0.28706490993499756
+    },
+    {
+      "start": 104.0,
+      "end": 105.0,
+      "text": "Çok net.",
+      "avg_logprob": -0.11108947903210041,
+      "no_speech_prob": 0.06709879636764526
+    },
+    {
+      "start": 105.0,
+      "end": 106.0,
+      "text": "Çok net.",
+      "avg_logprob": -0.11108947903210041,
+      "no_speech_prob": 0.06709879636764526
+    },
+    {
+      "start": 106.0,
+      "end": 107.0,
+      "text": "Evet.",
+      "avg_logprob": -0.11108947903210041,
+      "no_speech_prob": 0.06709879636764526
+    },
+    {
+      "start": 107.0,
+      "end": 115.0,
+      "text": "Yani yıllarca çalışıp didinip kenara koyduğun o parayı artık kendin için harca.",
+      "avg_logprob": -0.11108947903210041,
+      "no_speech_prob": 0.06709879636764526
+    },
+    {
+      "start": 115.0,
+      "end": 124.0,
+      "text": "Bu özellikle bizim gibi çocuklara bir şeyler bırakmak, kültürünün derin olduğu toplumlarda kulağı oldukça radikal gelmiyor mu?",
+      "avg_logprob": -0.11108947903210041,
+      "no_speech_prob": 0.06709879636764526
+    },
+    {
+      "start": 124.0,
+      "end": 130.0,
+      "text": "Radikal ve bir o kadar da özgürleştirici bir fikir aslında.",
+      "avg_logprob": -0.11108947903210041,
+      "no_speech_prob": 0.06709879636764526
+    },
+    {
+      "start": 130.0,
+      "end": 137.0,
+      "text": "Kaynağın altını çizdiği nokta şu, birikim yapma evresinden, keyif alma evresine,",
+      "avg_logprob": -0.11334096360206604,
+      "no_speech_prob": 0.3696828782558441
+    },
+    {
+      "start": 137.0,
+      "end": 140.0,
+      "text": "bilinçli bir geçiş yapmalısınız.",
+      "avg_logprob": -0.11334096360206604,
+      "no_speech_prob": 0.3696828782558441
+    },
+    {
+      "start": 140.0,
+      "end": 143.0,
+      "text": "Metindeki ifade çok çarpıcı.",
+      "avg_logprob": -0.11334096360206604,
+      "no_speech_prob": 0.3696828782558441
+    },
+    {
+      "start": 143.0,
+      "end": 150.0,
+      "text": "Yaptığınız fedakarlıklar hakkında hiçbir fikri olmayanlar için para saklamanın bir anlamı yok.",
+      "avg_logprob": -0.11334096360206604,
+      "no_speech_prob": 0.3696828782558441
+    },
+    {
+      "start": 150.0,
+      "end": 152.0,
+      "text": "Ooo, bu çok sert.",
+      "avg_logprob": -0.11334096360206604,
+      "no_speech_prob": 0.3696828782558441
+    },
+    {
+      "start": 152.0,
+      "end": 153.0,
+      "text": "Çok sert.",
+      "avg_logprob": -0.11334096360206604,
+      "no_speech_prob": 0.3696828782558441
+    },
+    {
+      "start": 153.0,
+      "end": 159.0,
+      "text": "Bu geleneksel miras beklentisine doğrudan bir meydan okuma.",
+      "avg_logprob": -0.11334096360206604,
+      "no_speech_prob": 0.3696828782558441
+    },
+    {
+      "start": 159.0,
+      "end": 163.0,
+      "text": "Diyor ki bu parayı siz kazandınız, bu hayatı siz yaşadınız.",
+      "avg_logprob": -0.09536515527624424,
+      "no_speech_prob": 0.020365798845887184
+    },
+    {
+      "start": 163.0,
+      "end": 168.0,
+      "text": "Dolayısıyla bu birikimin keyfini sürmekte öncelikle sizin hakkınız.",
+      "avg_logprob": -0.09536515527624424,
+      "no_speech_prob": 0.020365798845887184
+    },
+    {
+      "start": 168.0,
+      "end": 175.0,
+      "text": "Bu düşünce yapısı, parayla kurulan bütün ilişkiyi değiştiriyor ama sadece harcamaktan bahsetmiyor.",
+      "avg_logprob": -0.09536515527624424,
+      "no_speech_prob": 0.020365798845887184
+    },
+    {
+      "start": 175.0,
+      "end": 180.0,
+      "text": "Aynı zamanda diyor ki, bu yaşta yeni ve stresli yatırımlardan kaçının.",
+      "avg_logprob": -0.09536515527624424,
+      "no_speech_prob": 0.020365798845887184
+    },
+    {
+      "start": 180.0,
+      "end": 181.0,
+      "text": "Evet.",
+      "avg_logprob": -0.09536515527624424,
+      "no_speech_prob": 0.020365798845887184
+    },
+    {
+      "start": 181.0,
+      "end": 185.0,
+      "text": "Çünkü asıl hedef, artık huzur ve sessizlik.",
+      "avg_logprob": -0.09536515527624424,
+      "no_speech_prob": 0.020365798845887184
+    },
+    {
+      "start": 186.0,
+      "end": 189.0,
+      "text": "Bu kulağa hoş geliyor ama ne kadar gerçekçi.",
+      "avg_logprob": -0.11632825471152944,
+      "no_speech_prob": 0.2736060619354248
+    },
+    {
+      "start": 189.0,
+      "end": 199.0,
+      "text": "Yani birikime kısıtlı olan veya hala çalışmak zorunda olan biri için stresli yatırımlardan kaçının demek biraz lüks bir tavsiye değil mi?",
+      "avg_logprob": -0.11632825471152944,
+      "no_speech_prob": 0.2736060619354248
+    },
+    {
+      "start": 199.0,
+      "end": 201.0,
+      "text": "Çok yerinde bir soru.",
+      "avg_logprob": -0.11632825471152944,
+      "no_speech_prob": 0.2736060619354248
+    },
+    {
+      "start": 201.0,
+      "end": 210.0,
+      "text": "Metin burada kastettiği şey, yatırım yapmayı tamamen bırakın değil daha çok risk iştahınızı değiştirin demek istiyor.",
+      "avg_logprob": -0.11632825471152944,
+      "no_speech_prob": 0.2736060619354248
+    },
+    {
+      "start": 210.0,
+      "end": 211.0,
+      "text": "Anladım.",
+      "avg_logprob": -0.11632825471152944,
+      "no_speech_prob": 0.2736060619354248
+    },
+    {
+      "start": 211.0,
+      "end": 214.0,
+      "text": "Öncelikler değişiyor yani aynen öyle.",
+      "avg_logprob": -0.11632825471152944,
+      "no_speech_prob": 0.2736060619354248
+    },
+    {
+      "start": 214.0,
+      "end": 223.0,
+      "text": "Yani 20'li yaşlardaki gibi agresif büyüme odaklı geceleri uykunuzu kaçıracak riskler almanın zamanı geçti diyor.",
+      "avg_logprob": -0.09218424241593544,
+      "no_speech_prob": 0.016684485599398613
+    },
+    {
+      "start": 223.0,
+      "end": 234.0,
+      "text": "Artık öncelik serveti katlamak değil, mevcut olanı korumak ve o paranın getireceği huzuru satın almak.",
+      "avg_logprob": -0.09218424241593544,
+      "no_speech_prob": 0.016684485599398613
+    },
+    {
+      "start": 234.0,
+      "end": 238.0,
+      "text": "İşte bu finansal refahın tanımı değişiyor.",
+      "avg_logprob": -0.09218424241593544,
+      "no_speech_prob": 0.016684485599398613
+    },
+    {
+      "start": 238.0,
+      "end": 244.0,
+      "text": "Refah artık daha fazla para değil, daha fazla sükunet anlamına geliyor.",
+      "avg_logprob": -0.0996954553737873,
+      "no_speech_prob": 0.11103028059005737
+    },
+    {
+      "start": 244.0,
+      "end": 248.0,
+      "text": "Potansiyel bir kazanç getireceği stresi değmeyebilir.",
+      "avg_logprob": -0.0996954553737873,
+      "no_speech_prob": 0.11103028059005737
+    },
+    {
+      "start": 248.0,
+      "end": 249.0,
+      "text": "Anladım.",
+      "avg_logprob": -0.0996954553737873,
+      "no_speech_prob": 0.11103028059005737
+    },
+    {
+      "start": 249.0,
+      "end": 256.0,
+      "text": "Yani önceliklerin yeniden kalibre edilmesi ve bu felsefe doğrudan aile ilişkilerine de yansıyor.",
+      "avg_logprob": -0.0996954553737873,
+      "no_speech_prob": 0.11103028059005737
+    },
+    {
+      "start": 256.0,
+      "end": 262.0,
+      "text": "Metin çocukların ve torunların maddi durumu hakkında endişelenmeyi bırakın diyor.",
+      "avg_logprob": -0.0996954553737873,
+      "no_speech_prob": 0.11103028059005737
+    },
+    {
+      "start": 262.0,
+      "end": 265.0,
+      "text": "Evet, bu da zor bir konu.",
+      "avg_logprob": -0.0996954553737873,
+      "no_speech_prob": 0.11103028059005737
+    },
+    {
+      "start": 265.0,
+      "end": 266.0,
+      "text": "Çok zor.",
+      "avg_logprob": -0.0996954553737873,
+      "no_speech_prob": 0.11103028059005737
+    },
+    {
+      "start": 266.0,
+      "end": 270.0,
+      "text": "Onlara eğitim, barınak gibi temel destekleri sağladınız.",
+      "avg_logprob": -0.0830369030305168,
+      "no_speech_prob": 0.046578165143728256
+    },
+    {
+      "start": 270.0,
+      "end": 274.0,
+      "text": "Artık kendi yollarını bulma sorumluluğu onlarda diyor.",
+      "avg_logprob": -0.0830369030305168,
+      "no_speech_prob": 0.046578165143728256
+    },
+    {
+      "start": 274.0,
+      "end": 278.0,
+      "text": "Bu bir ebeveğin için söylenmesi en zor cümlelerden biri olabilir.",
+      "avg_logprob": -0.0830369030305168,
+      "no_speech_prob": 0.046578165143728256
+    },
+    {
+      "start": 278.0,
+      "end": 286.0,
+      "text": "Şüphesiz çok zorlayıcı çünkü o koruma, içgüdüsü kolay kolay bitmiyor.",
+      "avg_logprob": -0.0830369030305168,
+      "no_speech_prob": 0.046578165143728256
+    },
+    {
+      "start": 286.0,
+      "end": 292.0,
+      "text": "Ancak Metin'in burada işaret ettiği şey bir sorumluluk devri.",
+      "avg_logprob": -0.0830369030305168,
+      "no_speech_prob": 0.046578165143728256
+    },
+    {
+      "start": 293.0,
+      "end": 295.0,
+      "text": "Görevinizi yaptınız diyor.",
+      "avg_logprob": -0.09073851419226178,
+      "no_speech_prob": 0.29071155190467834
+    },
+    {
+      "start": 295.0,
+      "end": 296.0,
+      "text": "Aynen.",
+      "avg_logprob": -0.09073851419226178,
+      "no_speech_prob": 0.29071155190467834
+    },
+    {
+      "start": 296.0,
+      "end": 300.0,
+      "text": "Siz görevinizi yaptınız, onlara uçmaları için kanatları verdiniz.",
+      "avg_logprob": -0.09073851419226178,
+      "no_speech_prob": 0.29071155190467834
+    },
+    {
+      "start": 300.0,
+      "end": 309.0,
+      "text": "Şimdi uçma sırası onlarda bu yaklaşım ilk bakışta bencilce görünse de aslında çocuklara yapılan bir iyilik olabilir.",
+      "avg_logprob": -0.09073851419226178,
+      "no_speech_prob": 0.29071155190467834
+    },
+    {
+      "start": 309.0,
+      "end": 310.0,
+      "text": "Nasıl yani?",
+      "avg_logprob": -0.09073851419226178,
+      "no_speech_prob": 0.29071155190467834
+    },
+    {
+      "start": 310.0,
+      "end": 319.0,
+      "text": "Onlara kendi ayakları üzerinde durma ve kendi finansal başarılarını yaratma fırsatı tanıyor.",
+      "avg_logprob": -0.09073851419226178,
+      "no_speech_prob": 0.29071155190467834
+    },
+    {
+      "start": 320.0,
+      "end": 325.0,
+      "text": "Sürekli bir finansal güvence beklentisi içinde yaşamalarını engelliyor.",
+      "avg_logprob": -0.07733574137091637,
+      "no_speech_prob": 0.14261993765830994
+    },
+    {
+      "start": 325.0,
+      "end": 335.0,
+      "text": "Bu hem ebeveinin zihinsel olarak özgürleşmesi, hem de çocuğun finansal olarak olgunlaşması için bir kapı aralıyor.",
+      "avg_logprob": -0.07733574137091637,
+      "no_speech_prob": 0.14261993765830994
+    },
+    {
+      "start": 335.0,
+      "end": 341.0,
+      "text": "Peki bu finansal özgürlük ve sorumluluklardan arılma hali bize ne kazandırıyor?",
+      "avg_logprob": -0.07733574137091637,
+      "no_speech_prob": 0.14261993765830994
+    },
+    {
+      "start": 341.0,
+      "end": 345.0,
+      "text": "Metne göre en büyük kazanım huzur.",
+      "avg_logprob": -0.07733574137091637,
+      "no_speech_prob": 0.14261993765830994
+    },
+    {
+      "start": 345.0,
+      "end": 353.0,
+      "text": "Bu da bizi doğrudan bir sonraki ana konuya yani zihinsel ve bedensel sağlığa getiriyor sanırım.",
+      "avg_logprob": -0.08342074450240078,
+      "no_speech_prob": 0.11564826965332031
+    },
+    {
+      "start": 353.0,
+      "end": 355.0,
+      "text": "Tam olarak oraya getiriyor.",
+      "avg_logprob": -0.08342074450240078,
+      "no_speech_prob": 0.11564826965332031
+    },
+    {
+      "start": 355.0,
+      "end": 360.0,
+      "text": "Metin bu huzur felsefesini bedene indiriyor.",
+      "avg_logprob": -0.08342074450240078,
+      "no_speech_prob": 0.11564826965332031
+    },
+    {
+      "start": 360.0,
+      "end": 366.0,
+      "text": "Ama ilginç bir şekilde ağır egzersizlerden maratonlardan falan bahsetmiyor.",
+      "avg_logprob": -0.08342074450240078,
+      "no_speech_prob": 0.11564826965332031
+    },
+    {
+      "start": 366.0,
+      "end": 376.0,
+      "text": "Spor salonlarında ter dökmekten evet onlardan bahsetmiyor tavsiyesi çok daha ulaşılabilir ve sürdürülebilir.",
+      "avg_logprob": -0.12949276542422747,
+      "no_speech_prob": 0.5408015847206116
+    },
+    {
+      "start": 376.0,
+      "end": 386.0,
+      "text": "Her gün yürümek gibi orta derecede fiziksel aktivite amaç bir atlet olmak değil sağlıklı ve hareketli kalmak.",
+      "avg_logprob": -0.12949276542422747,
+      "no_speech_prob": 0.5408015847206116
+    },
+    {
+      "start": 386.0,
+      "end": 392.0,
+      "text": "Aynen odak noktası bedeni yıpratmak değil mevcut durumu korumak.",
+      "avg_logprob": -0.12949276542422747,
+      "no_speech_prob": 0.5408015847206116
+    },
+    {
+      "start": 392.0,
+      "end": 401.0,
+      "text": "Bu gerçekçi yaklaşım hoşuma gitti ve fiziksel sağlıkla zihinsel huzuru doğrudan birbirine bağlıyor.",
+      "avg_logprob": -0.06787632893179064,
+      "no_speech_prob": 0.057554811239242554
+    },
+    {
+      "start": 401.0,
+      "end": 404.0,
+      "text": "Küçük şeyler için stres yapmayın diyor.",
+      "avg_logprob": -0.06787632893179064,
+      "no_speech_prob": 0.057554811239242554
+    },
+    {
+      "start": 404.0,
+      "end": 408.0,
+      "text": "Hayatınızda zaten çok daha büyük fırtınalar atlattınız.",
+      "avg_logprob": -0.06787632893179064,
+      "no_speech_prob": 0.057554811239242554
+    },
+    {
+      "start": 408.0,
+      "end": 413.0,
+      "text": "Neyin gerçekten önemli olduğunu ayırt edebilecek bilgeleye sahipsiniz.",
+      "avg_logprob": -0.06787632893179064,
+      "no_speech_prob": 0.057554811239242554
+    },
+    {
+      "start": 413.0,
+      "end": 417.0,
+      "text": "Bu bilgelik vurgusu çok değerli, çok değerli.",
+      "avg_logprob": -0.06787632893179064,
+      "no_speech_prob": 0.057554811239242554
+    },
+    {
+      "start": 417.0,
+      "end": 423.0,
+      "text": "Çünkü bu yaşa gelmiş birbireyin zihninde ne kadar çok ağanı, ne kadar çok yaşa...",
+      "avg_logprob": -0.21796244272479304,
+      "no_speech_prob": 0.7201669216156006
+    }
+  ]
+}

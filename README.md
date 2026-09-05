@@ -1,98 +1,68 @@
 # Yaşama Dair
 
-Bu proje tek sayfalık (statik) bir web sayfasıdır: `index.html`.
+Hüseyin Emil’in Türkçe, Almanca ve İngilizce yaşam günlüğü. Hikâyeler, düşünceler, podcast bölümleri, fotoğraflar ve videolar için statik bir web sitesi.
 
-## Podcast nasıl eklerim?
+## Yerelde çalıştırma
 
-1. Yeni ses dosyanızı `ses/` klasörüne kopyalayın (mp3 önerilir; `m4a` da olur).
-2. (İsteğe bağlı) Bölüm kapağı için bir görseli `Fotos.img/` klasörüne kopyalayın.
-3. `content.js` içindeki `podcasts` listesine yeni bir obje ekleyin.
+Node.js 22 veya üzeri gerekir.
 
-Örnek:
-
-```js
-{
-  featured: false,
-  tag: "Bölüm 02",
-  title: "Yeni Bölüm Başlığı",
-  description: "Kısa açıklama…",
-  cover: "Fotos.img/yeni-kapak.jpg",
-  audio: "ses/yeni-bolum.mp3",
-  date: "2026-03-05"
-}
+```sh
+npm ci
+npm run build
+npm run check
 ```
 
-## Haber nasıl eklerim?
+`dist/` yayımlanacak dosyaları içerir. Ana klasördeki HTML sayfaları da güncellenir. JavaScript kapalıyken metinler, gezinme bağlantıları, yerel ses/video oynatıcıları ve iletişim formu kullanılabilir. Fotoğraf penceresi, mobil menü ve YouTube oynatıcısı JavaScript ile geliştirilir.
 
-1. Haber görselinizi `Fotos.img/` klasörüne kopyalayın (isterseniz boş bırakabilirsiniz).
-2. `content.js` içindeki `news` listesine yeni bir obje ekleyin.
+## İçerikleri düzenleme
 
-Örnek:
+- `content.js`: Türkçe yazılar, podcast bilgileri, fotoğraflar, haberler ve onaylanmış yorumlar.
+- `content.en.js`, `content.de.js`: Aynı içeriklerin İngilizce ve Almanca sürümleri. Her bölüm kendi dilindeki ses dosyasını kullanabilir; `audioLabel` kayıt dilini ve varsa yapay seslendirmeyi belirtir. Bu alan yoksa Türkçe kayıt etiketi kullanılır.
+- `writings/`: Uzun yazılar. Çevrilmiş yazılarda `.en.txt` ve `.de.txt` dosyalarını kullanın.
+- `site-copy.js`: Menü, sayfa başlıkları, açıklamalar ve form metinleri.
+- `scripts/build-pages.js`: Ortak HTML şablonları ve sayfa düzenleri.
+- `style.css`: Renkler, yazı karakterleri ve masaüstü/mobil yerleşimleri.
+- `Fotos.img/`, `ses/`, `video/`: Mevcut görsel, ses ve video dosyaları.
 
-```js
-{
-  date: "2026-03-05",
-  title: "Yeni Haber",
-  text: "Haber metni…",
-  image: "Fotos.img/haber-1.jpg",
-  link: null
-}
-```
+HTML sayfaları üretilir; kalıcı değişiklikleri şablonlara veya içerik dosyalarına yapın. Ardından `npm run build` çalıştırın. Mevcut `.html` adresleri korunur.
 
-## Felsefe yazısı nasıl eklerim?
+### Podcast eklemek
 
-1. (İsteğe bağlı) Görseli `Fotos.img/` klasörüne kopyalayın.
-2. `content.js` içindeki `philosophy` listesine yeni bir obje ekleyin.
+1. Ses dosyasını `ses/` klasörüne koyun. Mevcut oynatıcı ve RSS akışı MP3 kullanır.
+2. Üç içerik dosyasındaki `podcasts` listelerine kaydı ekleyin; başlık, açıklama, kapak, ses dosyası ve tarihi belirtin.
+3. `notes` düz metindir. HTML bağlantısı eklemeyin.
+4. Derleme tüm dillerdeki farklı ses dosyalarının gerçek boyutlarını ve kayıt sürelerini hesaplar. Eksik ses dosyası veya geçersiz kayıt varsa derleme başarısız olur.
 
-Örnek:
+### Sesli çeviriler
 
-```js
-{
-  date: "2026-03-05",
-  title: "Kısa Başlık",
-  text: "2-6 cümlelik kısa düşünce…",
-  image: "Fotos.img/felsefe-1.jpg" // yoksa null
-}
-```
+“60 Yaş Üzerinde” bölümünün Almanca ve İngilizce sesli çevirileri ilgili dil sayfalarında oynatılır. Türkçe asıl kayıt ve Türkçe RSS akışı korunur. Diğer bölümün kaydı Türkçedir. Kaynak dökümü, çeviri metinleri, kullanılan sesler ve yeniden üretim bilgileri `podcast-scripts/README.md` içindedir.
 
-Uzun bir yazınız varsa `text` yerine dosyadan yükleyebilirsiniz:
+### Yazı veya fotoğraf eklemek
 
-1. Yazıyı `writings/` klasörüne `.txt` olarak koyun.
-2. `content.js` içindeki `philosophy` kaydına `file: "writings/....txt"` ekleyin.
+`philosophy` ya da `photos` listesine yeni kayıt ekleyin. Uzun yazılarda `file`, kısa yazılarda `text` kullanın. Dil sürümlerini aynı sırada tutun. Fotoğraf yolları gerçek dosyalarla eşleşmelidir. Sonrasında yeniden derleyin.
 
-## Resim nasıl yüklerim?
+### Yorumları yönetmek
 
-- Profil/kapak gibi resimler için: resmi `Fotos.img/` içine koyun ve `content.js` veya `index.html` içindeki yolunu güncelleyin.
-- Dosya adı Türkçe karakter içerirse bazen sunucuda sorun çıkarabilir; sorunsuz olması için `a-z`, `0-9`, `-` kullanmak daha güvenlidir.
+Formlar Netlify Forms ile çalışır. Netlify tarafında form algılamanın açık olması ve yeni dağıtımda formların algılanması gerekir. Form adları korunur: `yorumlar`, `comments`, `comments-de`. Sayfa, dil ve yayımlama onayı gönderime eklenir. İstenmeyen gönderimler için gizli honeypot alanı bulunur.
 
-## Fotoğraf galerisine nasıl eklerim?
+Gönderiler otomatik yayımlanmaz. Netlify’de inceleyip yalnızca onayladığınız ad, tarih ve yorum metnini ilgili `content*.js` dosyasındaki `comments` listesine ekleyin. **E-posta adreslerini içerik dosyalarına koymayın.** Var olan okur yorumu korunmuştur. Kullanılmayan ve moderasyonsuz gönderi yayımlayabilen eski örnek senkronizasyon betiği kaldırılmıştır.
 
-1. Fotoğrafı `Fotos.img/` klasörüne kopyalayın.
-2. `content.js` içindeki `photos` listesine yeni bir kayıt ekleyin.
+Bir statik dosya sunucusu form gönderilerini işlemez. Yerel kontrol yalnızca form yapısını doğrular; gerçek teslimatı yayımdan sonra Netlify panelinde doğrulayın.
 
-Örnek:
+## Yayınlama
 
-```js
-{
-  date: "2026-03-06",
-  title: "Kısa Başlık",
-  caption: "1 cümle açıklama…",
-  image: "Fotos.img/yeni-foto.jpg"
-}
-```
+Mevcut Netlify yapılandırması kullanılır:
 
-## Videoyu siteye nasıl eklerim?
+- Derleme: `npm run build`
+- Yayın klasörü: `dist`
+- Node.js: `22`
 
-İki yol var:
+Yalnızca ziyaretçilere gerekli dosyalar `dist/` içine alınır; derleme betikleri, bağımlılıklar ve proje ayarları yayımlanmaz. RSS, sitemap, robots dosyası ve 404 sayfası dahildir. Kalıcı site adresi `scripts/site-lib.js` içinde tanımlanmıştır: `https://blog.yasama-dair.com`.
 
-1) **YouTube’a yükleyip eklemek (önerilir):** `videolar.html` içindeki YouTube `embed/...` linkini değiştiririz.
-2) **Video dosyasını siteye koymak:** MP4 dosyasını `video/` klasörüne kopyalayın ve `videolar.html` içindeki
-`video/turkiye-politik-korku.mp4` yolunu kendi dosyanızla değiştirin.
+YouTube videoları ziyaretçi oynatmayı seçene kadar yüklenmez. Yazı tipleri sistemdeki yazı tipleridir; harici font veya analiz izleyicisi çağrısı yapılmaz. Podcast kapak görseli ve önceden mevcut sosyal önizleme görseli korunmuştur.
 
-## Yorumlar nasıl çalışır?
+## Kontroller
 
-Sayfaların altında bir “Yorum Bırak” formu var. Bu form **Netlify Forms** ile çalışır:
+`npm run check`, üretilen 27 dil sayfasını ve 404 sayfasını, iç bağlantıları, dosyaları, bölüm bağlantılarını, form alanlarını, dil geçişlerini, metin kontrastlarını, podcast dosya boyutlarını ve yayın klasörünü denetler.
 
-- Site Netlify’de yayınlanıyorsa, gelen yorumlar Netlify panelinde **Forms** bölümüne düşer.
-- Yorumlar sitede otomatik yayınlanmaz; önce siz görürsünüz (moderasyon).
-- Netlify’de değilse form çalışmayabilir; o durumda yorumlar için farklı bir çözüm kurarız.
+Bu kontroller tarayıcıda görsel test veya gerçek Netlify form teslimatı testi yerine geçmez. Değişiklikleri yayınlamadan önce bilgisayar ve telefonda kontrol etmek, ayrıca deneme formunun Netlify’ye ulaştığını doğrulamak uygundur.

@@ -1,113 +1,194 @@
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hikayem | Yaşama Dair</title>
-    <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hikâyem | Yaşama Dair</title>
+<meta name="description" content="Bir ömrün içinden süzülen kelimeler, hatıralar ve paylaşmanın anlamı.">
+<meta name="theme-color" content="#f7f5f0">
+<link rel="canonical" href="https://blog.yasama-dair.com/hikayem.html">
+<link rel="alternate" hreflang="tr" href="https://blog.yasama-dair.com/hikayem.html">
+<link rel="alternate" hreflang="en" href="https://blog.yasama-dair.com/hikayem.en.html">
+<link rel="alternate" hreflang="de" href="https://blog.yasama-dair.com/hikayem.de.html">
+<link rel="alternate" hreflang="x-default" href="https://blog.yasama-dair.com/hikayem.html">
+<meta property="og:title" content="Hikâyem | Yaşama Dair">
+<meta property="og:description" content="Bir ömrün içinden süzülen kelimeler, hatıralar ve paylaşmanın anlamı.">
+<meta property="og:url" content="https://blog.yasama-dair.com/hikayem.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Yaşama Dair">
+<link rel="alternate" type="application/rss+xml" title="Yaşama Dair Podcast RSS" href="feed.xml">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Hikâyem | Yaşama Dair","description":"Bir ömrün içinden süzülen kelimeler, hatıralar ve paylaşmanın anlamı.","url":"https://blog.yasama-dair.com/hikayem.html","inLanguage":"tr","isPartOf":{"@type":"WebSite","name":"Yaşama Dair","url":"https://blog.yasama-dair.com"},"author":{"@type":"Person","name":"Hüseyin Emil"}}</script>
+<script src="nav.js" defer>
+</script>
+<script src="app.js" defer>
+</script>
 </head>
-
-<body class="page">
-    <nav id="navbar">
-        <a href="index.html" class="logo">YAŞAMA DAİR</a>
-        <div class="nav-links">
-            <a href="hikayem.html">Hikayem</a>
-            <a href="fotograflar.html">Fotoğraflar</a>
-            <a href="felsefe.html">Felsefe</a>
-            <a href="haberler.html">Haberler</a>
-            <a href="podcast.html">Podcast</a>
-            <a href="videolar.html">Videolar</a>
-            <a href="iletisim.html">İletişim</a>
-        </div>
-    </nav>
-
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="Fotos.img/IMG_20240831_132753.jpg" alt="Hocanın Portresi" />
-        </div>
-        <div class="about-content">
-            <span class="tag">BİR ÖMÜR HİKAYESİ</span>
-            <h2>Paylaşılmamış Değerler, Kalıcı Olur.</h2>
-            <p>Eskiden defterlere sığmazdı bu sözler, şimdi ise dijital dünyada yankı buluyor. 64 yılın bana öğrettiği en büyük
-                ders; insanın ancak paylaştıkça çoğaldığıdır.</p>
-            <p>Burada; sadece kelimeler değil, yaşanmışlığın getirdiği ağırbaşlı bir sessizlik ve ardından gelen samimi bir anlatı
-                bulacaksınız.</p>
-            <a href="podcast.html" class="inline-link">Podcast’leri dinle →</a>
-        </div>
-    </section>
-
-    <section id="comments">
-        <div class="section-head">
-            <span class="tag">KATIL</span>
-            <h2>Yorum Bırak</h2>
-            <p>Her yorum bir bilgidir; yeter ki saygıyla söylensin.</p>
-        </div>
-        <form class="comment-form" name="yorumlar" method="POST" action="tesekkurler.html" data-netlify="true"
-            netlify-honeypot="bot-field">
-            <input type="hidden" name="form-name" value="yorumlar" />
-            <input type="hidden" name="page" value="hikayem.html" />
-            <p class="honeypot">
-                <label>Bu alanı boş bırakın: <input name="bot-field" /></label>
-            </p>
-            <div class="form-grid">
-                <label>
-                    Adınız (isteğe bağlı)
-                    <input name="name" type="text" autocomplete="name" />
-                </label>
-                <label>
-                    E-posta (isteğe bağlı)
-                    <input name="email" type="email" autocomplete="email" />
-                </label>
-            </div>
-            <label>
-                Yorumunuz
-                <textarea name="message" rows="6" required></textarea>
-            </label>
-            <label class="checkbox">
-                <input name="consent" type="checkbox" required />
-                Saygı çerçevesinde yazdım; hakaret/küfür içermiyor.
-            </label>
-            <button class="btn-primary" type="submit">Gönder</button>
-            <p class="comment-note">Not: Yorumlar önce moderasyondan geçer.</p>
-        </form>
-    </section>
-
-    <footer id="footer">
-        <div class="footer-grid">
-            <div>
-                <a href="index.html" class="footer-logo">YAŞAMA DAİR</a>
-                <p class="footer-desc">Bu sayfa, bir ömrün samimi bir paylaşıma dönüştüğü noktadır. Hoş geldiniz biladerim,
-                    sefalar getirdiniz.</p>
-            </div>
-            <div class="footer-links">
-                <h4>HIZLI MENÜ</h4>
-                <ul>
-                    <li><a href="hikayem.html">Hikayem</a></li>
-                    <li><a href="felsefe.html">Felsefe</a></li>
-                    <li><a href="haberler.html">Haberler</a></li>
-                    <li><a href="podcast.html">Podcast</a></li>
-                    <li><a href="videolar.html">Videolar</a></li>
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h4>SOSYAL MEDYA</h4>
-                <ul>
-                    <li><a href="https://www.youtube.com/@huseyinemil35" target="_blank" rel="noopener noreferrer">YouTube</a></li>
-                    <li><a href="https://www.instagram.com/huseyinemil35" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                    <li><a href="https://www.facebook.com/huseyin.emil.3" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-                    <li><a href="#" aria-label="Spotify (eklenecek)">Spotify</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            &copy; 2026 Yaşama Dair | Hocanın Dijital Mirası | Tüm Hakları Saklıdır
-        </div>
-    </footer>
-
-    <script src="content.js"></script>
-    <script src="app.js"></script>
-    <script src="nav.js"></script>
+<body class="inner-page" data-page="hikayem" data-media-error="Kayıt oynatılamadı. Aşağıdaki oynatıcıyı veya ses dosyası bağlantısını kullanabilirsiniz.">
+<a class="skip-link" href="#main">İçeriğe geç</a>
+<header class="site-header" id="top">
+<div class="masthead wrap">
+<a class="brand" href="index.html" aria-label="Yaşama Dair — Ana sayfa">yaşama dair<span>.</span>
+</a>
+<p class="journal-name">Hüseyin Emil’in yaşam günlüğü</p>
+<div class="header-actions">
+<div class="languages" role="group" aria-label="Dil seçimi">
+<a href="hikayem.html" lang="tr" hreflang="tr" aria-label="Türkçe" aria-current="true">TR</a>
+<a href="hikayem.en.html" lang="en" hreflang="en" aria-label="English">EN</a>
+<a href="hikayem.de.html" lang="de" hreflang="de" aria-label="Deutsch">DE</a>
+</div>
+<button class="menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false">
+<svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M4 7h16M4 12h16M4 17h16"/>
+</svg>
+<span>Menü</span>
+</button>
+</div>
+</div>
+<div class="navigation-shell">
+<nav class="site-navigation wrap" id="site-navigation" aria-label="Sayfalar">
+<a href="index.html">Ana sayfa</a>
+<a href="hikayem.html" aria-current="page">Hikâyem</a>
+<a href="felsefe.html">Felsefe</a>
+<a href="podcast.html">Podcast</a>
+<a href="fotograflar.html">Fotoğraflar</a>
+<a href="videolar.html">Videolar</a>
+<a href="haberler.html">Haberler</a>
+<a href="iletisim.html">İletişim</a>
+</nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<header class="page-heading wrap">
+<div class="breadcrumb">
+<a href="index.html">Ana sayfa</a>
+<span aria-hidden="true">/</span>
+<span>Hikâyem</span>
+</div>
+<p class="eyebrow">YAŞAMA DAİR · Hüseyin Emil</p>
+<h1>Hikâyem</h1>
+<p>Bir ömrün içinden süzülen kelimeler, hatıralar ve paylaşmanın anlamı.</p>
+</header>
+<section class="story-page wrap section">
+<figure>
+<img class="" src="Fotos.img/IMG_20240831_132753.jpg" alt="Hüseyin Emil’in portresi" width="2448" height="3264" loading="eager" decoding="async" fetchpriority="high">
+<figcaption>Hüseyin Emil</figcaption>
+</figure>
+<div class="story-prose">
+<h2>Paylaştığımız şeyler, bizden geriye kalır.</h2>
+<p class="lead">Eskiden defterlere sığmazdı bu sözler, şimdi dijital dünyada yankı buluyor. 64 yılın bana öğrettiği en büyük ders: insan, paylaştıkça çoğalır.</p>
+<p>Burada sadece kelimeler değil, yaşanmışlığın getirdiği sessizlik ve ardından gelen samimi bir anlatı bulacaksınız. Fotoğrafın içindeki hüzün, podcast’in içindeki neşe; hepsi hayattan bir parça.</p>
+<p>Bir sözü, bir hatırayı ya da aklıma takılan bir soruyu paylaşmak için buradayım. Bazen bir fotoğrafın önünde duracağız, bazen bir düşüncenin peşinden gideceğiz.</p>
+<blockquote>Hayat, biriktirdiklerin değil, kiminle ne paylaştığındır.</blockquote>
+<span class="signature">Hüseyin Emil</span>
+<a class="button" href="podcast.html">Podcast’i dinle<svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M5 12h14m-6-6 6 6-6 6"/>
+</svg>
+</a>
+</div>
+</section>
+<section class="comment-section section wrap" id="comments">
+<div class="comment-intro">
+<p class="eyebrow">İletişim</p>
+<h2>Sohbete siz de katılın.</h2>
+<p>Sözünüz burada kıymetli. Düşüncenizi saygıyla paylaşın.</p>
+<p class="small-text">Özel bir mesaj için e-posta gönderebilirsiniz.</p>
+<a class="text-link" href="mailto:sisiyi889900@gmail.com">Doğrudan yazın<svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M5 12h14m-6-6 6 6-6 6"/>
+</svg>
+</a>
+</div>
+<form class="comment-form" name="yorumlar" method="POST" action="/tesekkurler.html" data-netlify="true" netlify-honeypot="bot-field">
+<input type="hidden" name="form-name" value="yorumlar">
+<input type="hidden" name="page" value="hikayem.html">
+<input type="hidden" name="language" value="tr">
+<p class="honeypot" aria-hidden="true">
+<label>Leave this blank <input name="bot-field" tabindex="-1" autocomplete="off">
+</label>
+</p>
+<div class="form-grid">
+<label>Adınız <span>(isteğe bağlı)</span>
+<input name="name" type="text" autocomplete="name" maxlength="100">
+</label>
+<label>E-posta <span>(isteğe bağlı)</span>
+<input name="email" type="email" autocomplete="email" maxlength="254">
+</label>
+</div>
+<label>Mesajınız<textarea name="message" rows="5" required minlength="3" maxlength="5000">
+</textarea>
+</label>
+<label class="checkbox">
+<input name="consent" value="yes" type="checkbox" required>
+<span>Yorumumun incelendikten sonra adımla birlikte yayımlanmasını kabul ediyorum.</span>
+</label>
+<button class="button" type="submit" data-sending="Gönderiliyor…">Mesajı gönder<svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M5 12h14m-6-6 6 6-6 6"/>
+</svg>
+</button>
+<p class="small-text form-note">Yorumlar yayımlanmadan önce incelenir. E-posta adresiniz yayımlanmaz.</p>
+</form>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap footer-top">
+<div class="footer-intro">
+<a class="brand" href="index.html">yaşama dair<span>.</span>
+</a>
+<p>Yaşanmışlıkları, soruları ve küçük anları paylaşmak için bir yer.</p>
+<span class="signature">Hüseyin Emil</span>
+</div>
+<div>
+<h2 class="eyebrow">Sayfalar</h2>
+<ul class="footer-links">
+<li>
+<a href="hikayem.html">Hikâyem</a>
+</li>
+<li>
+<a href="felsefe.html">Felsefe</a>
+</li>
+<li>
+<a href="podcast.html">Podcast</a>
+</li>
+<li>
+<a href="fotograflar.html">Fotoğraflar</a>
+</li>
+<li>
+<a href="videolar.html">Videolar</a>
+</li>
+<li>
+<a href="haberler.html">Haberler</a>
+</li>
+<li>
+<a href="iletisim.html">İletişim</a>
+</li>
+</ul>
+</div>
+<div>
+<h2 class="eyebrow">Takipte kalın</h2>
+<ul class="footer-links">
+<li>
+<a href="https://www.youtube.com/@huseyinemil35" target="_blank" rel="noopener noreferrer">YouTube</a>
+</li>
+<li>
+<a href="https://www.instagram.com/huseyinemil35" target="_blank" rel="noopener noreferrer">Instagram</a>
+</li>
+<li>
+<a href="https://www.facebook.com/huseyin.emil.3" target="_blank" rel="noopener noreferrer">Facebook</a>
+</li>
+<li>
+<a href="feed.xml">Podcast RSS</a>
+</li>
+<li>
+<a href="mailto:sisiyi889900@gmail.com">Doğrudan yazın</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="wrap footer-bottom">
+<p>© 2026 Hüseyin Emil · Yaşama Dair</p>
+<a href="#top">Başa dön ↑</a>
+</div>
+</footer>
 </body>
-
 </html>

@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "node update-feed.js"
+    "build": "node update-feed.js && node scripts/build-pages.js",
+    "check": "node scripts/check-site.js"
   },
   "dependencies": {
     "music-metadata": "^10.0.0"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }
