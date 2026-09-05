@@ -14,7 +14,7 @@ window.YASAMA_DAIR_CONTENT = {
       "tag": "Folge 01 — Erstausstrahlung",
       "title": "Über 60 Jahre alt...",
       "description": "Der feine Schmerz, den wir beim Rückblick empfinden, ist eigentlich unser größter Schatz...",
-      "cover": "Fotos.img/yasama-dair.jpg",
+      "cover": "Fotos.img/60-yas-uzerinde.jpg",
       "audio": "ses/60-yas-uzerinde.mp3",
       "date": "2025-12-18",
       "notes": "Ein Gespräch über das Leben nach 60, Erinnerungen und Erfahrungen."

@@ -14,7 +14,7 @@ window.YASAMA_DAIR_CONTENT = {
       "tag": "Episode 01 — First Broadcast",
       "title": "Over 60 Years Old...",
       "description": "The subtle ache we see when looking back is actually our greatest treasure...",
-      "cover": "Fotos.img/yasama-dair.jpg",
+      "cover": "Fotos.img/60-yas-uzerinde.jpg",
       "audio": "ses/60-yas-uzerinde.mp3",
       "date": "2025-12-18",
       "notes": "A conversation about life after 60, memories and experience."

@@ -381,7 +381,6 @@ button .icon {
 .podcast-art img {
   width:100%;
   height:auto;
-  aspect-ratio:16/9;
   object-fit:contain;
   box-shadow:0 18px 40px #0004}
 .episode-number {

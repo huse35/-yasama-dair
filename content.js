@@ -14,7 +14,7 @@ window.YASAMA_DAIR_CONTENT = {
       "tag": "Bölüm 01 — İlk Yayın",
       "title": "60 Yaş Üzerinde...",
       "description": "Geçmişe bakınca gördüğümüz o ince sızı aslında bizim en büyük hazinemiz...",
-      "cover": "Fotos.img/yasama-dair.jpg",
+      "cover": "Fotos.img/60-yas-uzerinde.jpg",
       "audio": "ses/60-yas-uzerinde.mp3",
       "date": "2025-12-18",
       "notes": "60 yaş sonrasında hayat, hatıralar ve deneyimler üzerine bir sohbet."
