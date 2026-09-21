@@ -24,7 +24,7 @@ function checkURL(value, from) {
   }
   references++;
 }
-assert.equal(files.length, 28, 'Expected 27 localized routes and one 404');
+assert.equal(files.length, LANGUAGES.length * ROUTES.length + 1, 'Expected active localized routes and one 404');
 for (const [name, html] of docs) {
   assert.equal((html.match(/<main\b/g) || []).length, 1, `${name}: main landmark`);
   assert.equal((html.match(/<h1\b/g) || []).length, 1, `${name}: single primary heading`);
@@ -117,7 +117,7 @@ for(const match of rss.matchAll(/<enclosure\b[^>]+>/g)) {
   assert.equal(length,fs.statSync(file).size,'RSS enclosure length');
 }
 assert([...rss.matchAll(/<itunes:duration>(\d+)<\/itunes:duration>/g)].every(m=>Number(m[1])>0),'RSS duration');
-assert.equal((fs.readFileSync(path.join(root,'sitemap.xml'),'utf8').match(/<url>/g)||[]).length,24);
+assert.equal((fs.readFileSync(path.join(root,'sitemap.xml'),'utf8').match(/<url>/g)||[]).length,LANGUAGES.length * ROUTES.filter(page=>page!=='tesekkurler').length);
 for(const name of ['package.json','site-copy.js','update-feed.js','sync-comments.js','scripts','.git','node_modules']) assert(!fs.existsSync(path.join(root,name)),`Private build file published: ${name}`);
 const css=fs.readFileSync(path.join(root,'style.css'),'utf8');
 assert.equal((css.match(/{/g)||[]).length,(css.match(/}/g)||[]).length,'CSS braces');
@@ -127,4 +127,24 @@ for(const [front,back] of [['61645c','f7f5f0'],['a13e2c','f7f5f0'],['ffffff','a1
   const a=luminance(front),b=luminance(back),ratio=(Math.max(a,b)+.05)/(Math.min(a,b)+.05);
   assert(ratio>=4.5,`Insufficient text contrast: ${front}/${back}`);
 }
-console.log(`PASS: ${files.length} pages, ${references} internal links/assets, 24 localized forms, complete language content, podcast files, SEO, contrast and public bundle boundaries.`);
+
+const inactiveLanguages = Object.keys(require('../site-copy')).filter(lang=>!LANGUAGES.includes(lang));
+const redirects = fs.readFileSync(path.join(root,'_redirects'),'utf8');
+const sitemap = fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
+for (const lang of inactiveLanguages) {
+  for (const page of ROUTES) {
+    const inactive = route(page,lang), target = '/'+route(page,'tr');
+    assert(!docs.has(inactive), `Inactive page published: ${inactive}`);
+    assert(redirects.includes(`/${inactive} ${target} 302\n`), `Missing inactive redirect: ${inactive}`);
+    assert(redirects.includes(`/${inactive.replace(/\.html$/, '')} ${target} 302\n`), `Missing extensionless redirect: ${inactive}`);
+    for (const html of docs.values()) assert(!html.includes(inactive) && !html.includes(`hreflang="${lang}"`), `Inactive language advertised: ${lang}`);
+  }
+  assert(!sitemap.includes(`hreflang="${lang}"`), `Inactive sitemap language: ${lang}`);
+  // Source files remain available to re-enable the language later.
+  for (const episode of readContent(lang).podcasts) {
+    for (const key of ['audio','transcript']) if(episode[key]) assert(fs.existsSync(publicPath(episode[key])));
+    if (episode.audio.includes(`.${lang}.`)) assert(!fs.existsSync(path.join(root,episode.audio)), 'Inactive audio published');
+  }
+}
+
+console.log(`PASS: ${files.length} pages, ${references} internal links/assets, ${LANGUAGES.length * ROUTES.filter(page=>page!=='tesekkurler').length} localized forms, complete language content, podcast files, SEO, contrast and public bundle boundaries.`);

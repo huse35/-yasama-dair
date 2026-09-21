@@ -3,7 +3,8 @@ const path = require('node:path');
 const vm = require('node:vm');
 const ROOT = path.resolve(__dirname, '..');
 const ORIGIN = 'https://blog.yasama-dair.com';
-const LANGUAGES = ['tr', 'en', 'de'];
+// Published languages. Add 'en' here to restore the preserved English content.
+const LANGUAGES = ['tr', 'de'];
 const ROUTES = ['index', 'hikayem', 'felsefe', 'podcast', 'fotograflar', 'videolar', 'haberler', 'iletisim', 'tesekkurler'];
 const escape = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[char]));
 const route = (name, lang = 'tr') => `${name}${lang === 'tr' ? '' : `.${lang}`}.html`;

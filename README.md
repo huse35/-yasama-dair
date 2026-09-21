@@ -1,6 +1,18 @@
 # Yaşama Dair
 
-Hüseyin Emil’in Türkçe, Almanca ve İngilizce yaşam günlüğü. Hikâyeler, düşünceler, podcast bölümleri, fotoğraflar ve videolar için statik bir web sitesi.
+Hüseyin Emil’in Türkçe ve Almanca yaşam günlüğü. Hikâyeler, düşünceler, podcast bölümleri, fotoğraflar ve videolar için statik bir web sitesi.
+
+## Yayındaki diller ve İngilizceyi yeniden açmak
+
+Şu anda yalnızca Türkçe (`tr`) ve Almanca (`de`) yayımlanır. İngilizce içerikler (`content.en.js`, `site-copy.js` içindeki `en` bölümü, İngilizce yazı/metin ve ses dosyaları) GitHub’da korunur; yayına dahil edilmez. Yeni içerikleri şimdilik yalnızca Türkçe ve Almanca güncellemek yeterlidir.
+
+Eski İngilizce sayfa adresleri, aynı Türkçe sayfaya geçici 302 yönlendirmesiyle açılır. Derleme bu kuralları `dist/_redirects` içine yazar. Menü, 404 sayfası, dil etiketleri ve sitemap yalnızca yayındaki dilleri içerir.
+
+İngilizceyi yeniden açmak için:
+
+1. Korunan İngilizce içerikleri güncel Türkçe/Almanca içeriklerle eşleştirin; podcast kimliklerini aynı tutun, metin ve kayıt dosyalarını kontrol edin.
+2. `scripts/site-lib.js` içindeki `LANGUAGES` listesine `en` ekleyin.
+3. `npm run build` ve `npm run check` çalıştırın, ardından yayımlayın. İngilizce sayfalar yeniden üretilir ve İngilizce yönlendirmeleri otomatik kaldırılır.
 
 ## Yerelde çalıştırma
 
@@ -29,7 +41,7 @@ HTML sayfaları üretilir; kalıcı değişiklikleri şablonlara veya içerik do
 ### Podcast eklemek
 
 1. Ses dosyasını `ses/` klasörüne koyun. Mevcut oynatıcı ve RSS akışı MP3 kullanır.
-2. Üç içerik dosyasındaki `podcasts` listelerine kaydı ekleyin; başlık, açıklama, kapak, ses dosyası ve tarihi belirtin. Her bölüm için üç dilde aynı, benzersiz ve kalıcı bir `id` kullanın (örnek: `yeni-bolum`). Yayımlandıktan sonra bu kimliği değiştirmeyin. Eski bölümlerdeki `legacyAnchor` değerlerini koruyun; yeni bölümlere bu alanı eklemeyin.
+2. Yayındaki dillerin içerik dosyalarındaki `podcasts` listelerine kaydı ekleyin; başlık, açıklama, kapak, ses dosyası ve tarihi belirtin. Her bölüm için yayındaki dillerde aynı, benzersiz ve kalıcı bir `id` kullanın (örnek: `yeni-bolum`). Yayımlandıktan sonra bu kimliği değiştirmeyin. Eski bölümlerdeki `legacyAnchor` değerlerini koruyun; yeni bölümlere bu alanı eklemeyin.
 3. `notes` düz metindir. HTML bağlantısı eklemeyin.
 4. Derleme tüm dillerdeki farklı ses dosyalarının gerçek boyutlarını ve kayıt sürelerini hesaplar. Eksik ses dosyası veya geçersiz kayıt varsa derleme başarısız olur.
 
@@ -37,7 +49,7 @@ HTML sayfaları üretilir; kalıcı değişiklikleri şablonlara veya içerik do
 
 Bölümde `transcript` alanı varsa düz metin dosyası, ilgili dilin podcast sayfasında “Kaydın metnini oku” bölümüne derlenir. Kaynak metinler değiştirilmeden ve otomatik döküm/çeviri hatası olabileceği belirtilerek gösterilir. İkinci bölümün metni henüz mevcut değildir.
 
-`incomplete: true` olan bölümlerde kayıt kesintisi notu gösterilir. Tam ses dosyası temin edilmeden bu alanı kaldırmayın; tam kayıt geldiğinde üç dilin seslerini ve metinlerini birlikte güncelleyin.
+`incomplete: true` olan bölümlerde kayıt kesintisi notu gösterilir. Tam ses dosyası temin edilmeden bu alanı kaldırmayın; tam kayıt geldiğinde ilgili dillerin seslerini ve metinlerini birlikte güncelleyin.
 
 ### Fotoğraf ve paylaşım görselleri
 
@@ -45,7 +57,7 @@ Portre için `Fotos.img/portrait-480.webp`, `portrait-960.webp` ve `portrait-144
 
 ### Sesli çeviriler
 
-“60 Yaş Üzerinde” bölümünün Almanca ve İngilizce sesli çevirileri ilgili dil sayfalarında oynatılır. Türkçe asıl kayıt ve Türkçe RSS akışı korunur. Diğer bölümün kaydı Türkçedir. Kaynak dökümü, çeviri metinleri, kullanılan sesler ve yeniden üretim bilgileri `podcast-scripts/README.md` içindedir.
+“60 Yaş Üzerinde” bölümünün Almanca sesli çevirisi Almanca sayfada oynatılır. İngilizce çevirisi ileride yeniden açılmak üzere korunur. Türkçe asıl kayıt ve Türkçe RSS akışı korunur. Diğer bölümün kaydı Türkçedir. Kaynak dökümü, çeviri metinleri, kullanılan sesler ve yeniden üretim bilgileri `podcast-scripts/README.md` içindedir.
 
 ### Yazı veya fotoğraf eklemek
 
@@ -73,6 +85,6 @@ YouTube videoları ziyaretçi oynatmayı seçene kadar yüklenmez. Yazı tipleri
 
 ## Kontroller
 
-`npm run check`, üretilen 27 dil sayfasını ve 404 sayfasını, iç bağlantıları, dosyaları, bölüm bağlantılarını, form alanlarını, dil geçişlerini, metin kontrastlarını, podcast dosya boyutlarını ve yayın klasörünü denetler.
+`npm run check`, üretilen 18 dil sayfasını ve 404 sayfasını, iç bağlantıları, dosyaları, bölüm bağlantılarını, form alanlarını, dil geçişlerini, metin kontrastlarını, podcast dosya boyutlarını ve yayın klasörünü denetler.
 
 Bu kontroller tarayıcıda görsel test veya gerçek Netlify form teslimatı testi yerine geçmez. Değişiklikleri yayınlamadan önce bilgisayar ve telefonda kontrol etmek, ayrıca deneme formunun Netlify’ye ulaştığını doğrulamak uygundur.
