@@ -1533,3 +1533,10 @@ body {
 /* Allow enlarged text and long translated headings to reflow. */
 h1,h2,h3 { overflow-wrap: anywhere; }
 @media(max-width:650px) { .brand { white-space:normal; } }
+
+/* Native disclosure keeps transcripts readable without JavaScript. */
+.episode-transcript { margin-top: 1.25rem; }
+.episode-transcript summary { cursor: pointer; font-weight: 600; }
+.transcript-text { white-space: pre-line; line-height: 1.8; overflow-wrap: anywhere; margin-top: 1rem; }
+.recording-note { border-left: 3px solid var(--accent); padding-left: .8rem; font-size: .9rem; }
+.podcast-card[id], .episode-anchor { scroll-margin-top: 1.5rem; }

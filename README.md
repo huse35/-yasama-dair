@@ -29,9 +29,19 @@ HTML sayfaları üretilir; kalıcı değişiklikleri şablonlara veya içerik do
 ### Podcast eklemek
 
 1. Ses dosyasını `ses/` klasörüne koyun. Mevcut oynatıcı ve RSS akışı MP3 kullanır.
-2. Üç içerik dosyasındaki `podcasts` listelerine kaydı ekleyin; başlık, açıklama, kapak, ses dosyası ve tarihi belirtin.
+2. Üç içerik dosyasındaki `podcasts` listelerine kaydı ekleyin; başlık, açıklama, kapak, ses dosyası ve tarihi belirtin. Her bölüm için üç dilde aynı, benzersiz ve kalıcı bir `id` kullanın (örnek: `yeni-bolum`). Yayımlandıktan sonra bu kimliği değiştirmeyin. Eski bölümlerdeki `legacyAnchor` değerlerini koruyun; yeni bölümlere bu alanı eklemeyin.
 3. `notes` düz metindir. HTML bağlantısı eklemeyin.
 4. Derleme tüm dillerdeki farklı ses dosyalarının gerçek boyutlarını ve kayıt sürelerini hesaplar. Eksik ses dosyası veya geçersiz kayıt varsa derleme başarısız olur.
+
+### Kayıt metinleri ve yarım kayıtlar
+
+Bölümde `transcript` alanı varsa düz metin dosyası, ilgili dilin podcast sayfasında “Kaydın metnini oku” bölümüne derlenir. Kaynak metinler değiştirilmeden ve otomatik döküm/çeviri hatası olabileceği belirtilerek gösterilir. İkinci bölümün metni henüz mevcut değildir.
+
+`incomplete: true` olan bölümlerde kayıt kesintisi notu gösterilir. Tam ses dosyası temin edilmeden bu alanı kaldırmayın; tam kayıt geldiğinde üç dilin seslerini ve metinlerini birlikte güncelleyin.
+
+### Fotoğraf ve paylaşım görselleri
+
+Portre için `Fotos.img/portrait-480.webp`, `portrait-960.webp` ve `portrait-1440.webp` sürümleri kullanılır; tarayıcı ekran genişliğine uygun dosyayı seçer. Orijinal JPEG fotoğraf bağlantısı korunur. Portreyi değiştirirseniz bu üç sürümü de yenileyin. Tüm dil sayfalarının sosyal paylaşım görseli `Fotos.img/yasama-dair.jpg` dosyasıdır.
 
 ### Sesli çeviriler
 

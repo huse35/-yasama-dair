@@ -2,7 +2,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const assert = require('node:assert/strict');
-const {ROOT, ORIGIN, LANGUAGES, ROUTES, route, readContent, publicPath} = require('./site-lib');
+const {ROOT, ORIGIN, LANGUAGES, ROUTES, route, readContent, publicPath, escape: escapeHTML} = require('./site-lib');
 const root = path.join(ROOT, 'dist');
 const files = fs.readdirSync(root).filter(name => name.endsWith('.html'));
 const docs = new Map(files.map(name => [name, fs.readFileSync(path.join(root, name), 'utf8')]));
@@ -53,6 +53,24 @@ for (const [name, html] of docs) {
     assert(html.includes(`rel="alternate" hreflang="${language}"`), `${name}: SEO alternate missing`);
   }
   assert(html.includes('name="description"'), `${name}: description missing`);
+  assert(html.includes(`property="og:image" content="${ORIGIN}/Fotos.img/yasama-dair.jpg"`), `${name}: social preview missing`);
+  for (const match of html.matchAll(/<img\b[^>]*srcset="([^"]+)"[^>]*>/g)) {
+    for (const candidate of match[1].split(',')) checkURL(candidate.trim().split(/\s+/)[0], name);
+    assert(attribute(match[0], 'sizes'), `${name}: responsive image sizes missing`);
+  }
+  if (page === 'podcast') {
+    for (const episode of readContent(lang).podcasts) {
+      const article = html.match(new RegExp(`<article[^>]*id="episode-${episode.id}"[\\s\\S]*?</article>`))?.[0];
+      assert(article, `${name}: missing stable episode anchor for ${episode.id}`);
+      assert(article.includes(`src="${episode.audio}"`), `${name}: episode points to wrong recording`);
+      if (episode.legacyAnchor) assert(article.includes(`id="${episode.legacyAnchor}"`), `${name}: legacy anchor lost`);
+      if (episode.incomplete) assert(article.includes('class="recording-note"'), `${name}: incomplete recording notice missing`);
+      if (episode.transcript) {
+        assert(article.includes('<details class="episode-transcript">'), `${name}: transcript disclosure missing`);
+        assert(article.includes(escapeHTML(fs.readFileSync(publicPath(episode.transcript), 'utf8').trim())), `${name}: transcript missing or changed`);
+      }
+    }
+  }
   if (page !== 'tesekkurler') {
     const form = html.match(/<form\b[\s\S]*?<\/form>/)?.[0];
     assert(form && /method="POST"/.test(form), `${name}: native POST form missing`);
@@ -75,14 +93,24 @@ for (const [name, html] of docs) {
 }
 for(const lang of LANGUAGES) {
   const content=readContent(lang);
-  assert.equal(content.podcasts.length,readContent('tr').podcasts.length);
+  assert.deepEqual(content.podcasts.map(p=>p.id).sort(),readContent('tr').podcasts.map(p=>p.id).sort(), `${lang}: podcast identities differ`);
+  for (const episode of content.podcasts) {
+    assert.equal(episode.legacyAnchor, readContent('tr').podcasts.find(p=>p.id===episode.id).legacyAnchor, `${lang}: legacy anchor differs`);
+  }
   assert.equal(content.philosophy.length,readContent('tr').philosophy.length);
   for(const collection of ['podcasts','photos','philosophy','news']) for(const item of content[collection]) {
-    for(const key of ['audio','cover','image','file']) if(item[key]) assert(fs.existsSync(publicPath(item[key])), `Missing ${key}: ${item[key]}`);
+    for(const key of ['audio','cover','image','file','transcript']) if(item[key]) assert(fs.existsSync(publicPath(item[key])), `Missing ${key}: ${item[key]}`);
   }
 }
 const rss=fs.readFileSync(path.join(root,'feed.xml'),'utf8');
 assert.equal((rss.match(/<item>/g)||[]).length,readContent('tr').podcasts.length);
+for (const item of rss.matchAll(/<item>([\s\S]*?)<\/item>/g)) {
+  const url = item[1].match(/<link>([^<]+)<\/link>/)?.[1];
+  checkURL(url, 'feed.xml');
+  const episode = readContent('tr').podcasts.find(p => url === `${ORIGIN}/podcast.html#episode-${p.id}`);
+  assert(episode, 'RSS must link to a stable episode identity');
+  assert(item[1].includes(`url="${ORIGIN}/${episode.audio}"`), 'RSS link and recording differ');
+}
 for(const match of rss.matchAll(/<enclosure\b[^>]+>/g)) {
   const url=attribute(match[0],'url'),length=Number(attribute(match[0],'length'));
   const file=path.join(root,new URL(url).pathname.slice(1));

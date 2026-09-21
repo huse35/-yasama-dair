@@ -18,7 +18,11 @@ window.YASAMA_DAIR_CONTENT = {
       "audio": "ses/60-yas-uzerinde.de.mp3",
       "audioLabel": "Deutsch · KI-Sprecherstimme",
       "date": "2025-12-18",
-      "notes": "Ein Gespräch über das Leben nach 60, Erinnerungen und Erfahrungen. Deutsche Übersetzung mit einer KI-Sprecherstimme. Die Aufnahme endet wie das türkische Original mitten im letzten Satz."
+      "notes": "Ein Gespräch über das Leben nach 60, Erinnerungen und Erfahrungen. Deutsche Übersetzung mit einer KI-Sprecherstimme. Die Aufnahme endet wie das türkische Original mitten im letzten Satz.",
+      "id": "60-yas-uzerinde",
+      "legacyAnchor": "episode-audio-1",
+      "transcript": "podcast-scripts/60-yas-uzerinde.de.txt",
+      "incomplete": true
     },
     {
       "featured": false,
@@ -28,7 +32,9 @@ window.YASAMA_DAIR_CONTENT = {
       "notes": "Gedanken über die Gesellschaft der Türkei, Angst und Korruption.",
       "cover": "Fotos.img/yasama-dair.jpg",
       "audio": "ses/korku-ve-yozlasma-kiskacinda-turkiye.mp3",
-      "date": "2026-03-06"
+      "date": "2026-03-06",
+      "id": "korku-ve-yozlasma-kiskacinda-turkiye",
+      "legacyAnchor": "episode-audio-0"
     }
   ],
   "philosophy": [
