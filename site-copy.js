@@ -1,6 +1,7 @@
 // Shared interface copy. Content and recordings remain in content*.js.
 module.exports = {
   tr: {
+    transcriptTitle: "Kaydın metnini oku", transcriptNotice: "Bu metin otomatik ses dökümüdür; kelime ve noktalama hataları içerebilir.", incompleteRecording: "Kayıt notu: Mevcut ses dosyası son cümlenin ortasında bitmektedir.",
     locale: 'tr-TR', language: 'Türkçe', journal: 'Hüseyin Emil’in yaşam günlüğü',
     nav: ['Ana sayfa', 'Hikâyem', 'Felsefe', 'Podcast', 'Fotoğraflar', 'Videolar', 'Haberler', 'İletişim'],
     skip: 'İçeriğe geç', menu: 'Menü', close: 'Kapat', languages: 'Dil seçimi',
@@ -20,6 +21,7 @@ module.exports = {
     emailLabel: 'Doğrudan yazın', socialLabel: 'Başka nerelerdeyim?', socialIntro: 'Yeni videolar ve paylaşımlar için.', footerText: 'Yaşanmışlıkları, soruları ve küçük anları paylaşmak için bir yer.', footerMenu: 'Sayfalar', footerFollow: 'Takipte kalın', copyright: 'Hüseyin Emil · Yaşama Dair', back: 'Ana sayfaya dön', top: 'Başa dön', next: 'Keşfetmeye devam et', notFound: 'Bu sayfa burada değil.', notFoundText: 'Bağlantı değişmiş olabilir. Ana sayfadan devam edebilirsiniz.'
   },
   de: {
+    transcriptTitle: "Transkript lesen", transcriptNotice: "Dieser Text ist die Übersetzung eines automatischen Transkripts und kann Erkennungs- oder Übersetzungsfehler enthalten.", incompleteRecording: "Hinweis zur Aufnahme: Die verfügbare Aufnahme endet mitten im letzten Satz.",
     locale: 'de-DE', language: 'Deutsch', journal: 'Das Lebensjournal von Hüseyin Emil',
     nav: ['Startseite', 'Meine Geschichte', 'Gedanken', 'Podcast', 'Fotos', 'Videos', 'Neuigkeiten', 'Kontakt'],
     skip: 'Zum Inhalt', menu: 'Menü', close: 'Schließen', languages: 'Sprache wählen',
@@ -39,6 +41,7 @@ module.exports = {
     emailLabel: 'Schreiben Sie mir', socialLabel: 'Hier finden Sie mich auch', socialIntro: 'Neue Videos und Beiträge entdecken.', footerText: 'Ein Ort für Erfahrungen, Fragen und die kleinen Momente des Lebens.', footerMenu: 'Entdecken', footerFollow: 'In Verbindung bleiben', copyright: 'Hüseyin Emil · Yaşama Dair', back: 'Zur Startseite', top: 'Nach oben', next: 'Weiter entdecken', notFound: 'Diese Seite ist nicht hier.', notFoundText: 'Der Link hat sich möglicherweise geändert. Über die Startseite geht es weiter.'
   },
   en: {
+    transcriptTitle: "Read the transcript", transcriptNotice: "This text is a translation of an automatic transcript and may contain transcription or translation errors.", incompleteRecording: "Recording note: The available recording ends in the middle of the final sentence.",
     locale: 'en-GB', language: 'English', journal: 'A life journal by Hüseyin Emil',
     nav: ['Home', 'My story', 'Thoughts', 'Podcast', 'Photos', 'Videos', 'News', 'Contact'],
     skip: 'Skip to content', menu: 'Menu', close: 'Close', languages: 'Choose language',

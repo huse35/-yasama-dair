@@ -18,7 +18,11 @@ window.YASAMA_DAIR_CONTENT = {
       "audio": "ses/60-yas-uzerinde.en.mp3",
       "audioLabel": "English · AI narration",
       "date": "2025-12-18",
-      "notes": "A conversation about life after 60, memories and experience. English translation with an AI narrator. Like the Turkish original, the recording ends in the middle of the final sentence."
+      "notes": "A conversation about life after 60, memories and experience. English translation with an AI narrator. Like the Turkish original, the recording ends in the middle of the final sentence.",
+      "id": "60-yas-uzerinde",
+      "legacyAnchor": "episode-audio-1",
+      "transcript": "podcast-scripts/60-yas-uzerinde.en.txt",
+      "incomplete": true
     },
     {
       "featured": false,
@@ -28,7 +32,9 @@ window.YASAMA_DAIR_CONTENT = {
       "notes": "Reflections on Turkish society, fear and corruption.",
       "cover": "Fotos.img/yasama-dair.jpg",
       "audio": "ses/korku-ve-yozlasma-kiskacinda-turkiye.mp3",
-      "date": "2026-03-06"
+      "date": "2026-03-06",
+      "id": "korku-ve-yozlasma-kiskacinda-turkiye",
+      "legacyAnchor": "episode-audio-0"
     }
   ],
   "philosophy": [

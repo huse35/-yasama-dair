@@ -15,7 +15,7 @@ async function generateRSS() {
     return `    <item>
       <title>${e(p.title)}</title>
       <description>${e(p.description)}</description>
-      <link>${ORIGIN}/podcast.html#episode-audio-${index}</link>
+      <link>${ORIGIN}/podcast.html#episode-${e(p.id)}</link>
       <itunes:author>Hüseyin Emil</itunes:author>
       <itunes:summary>${e(p.description)}</itunes:summary>
       <itunes:image href="${e(new URL(p.cover, ORIGIN + '/').href)}" />

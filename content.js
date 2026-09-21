@@ -17,7 +17,11 @@ window.YASAMA_DAIR_CONTENT = {
       "cover": "Fotos.img/60-yas-uzerinde.jpg",
       "audio": "ses/60-yas-uzerinde.mp3",
       "date": "2025-12-18",
-      "notes": "60 yaş sonrasında hayat, hatıralar ve deneyimler üzerine bir sohbet."
+      "notes": "60 yaş sonrasında hayat, hatıralar ve deneyimler üzerine bir sohbet.",
+      "id": "60-yas-uzerinde",
+      "legacyAnchor": "episode-audio-1",
+      "transcript": "podcast-scripts/60-yas-uzerinde.tr.txt",
+      "incomplete": true
     },
     {
       "featured": false,
@@ -27,7 +31,9 @@ window.YASAMA_DAIR_CONTENT = {
       "notes": "Türkiye’nin toplumsal yapısı, korku ve yozlaşma üzerine düşünceler.",
       "cover": "Fotos.img/yasama-dair.jpg",
       "audio": "ses/korku-ve-yozlasma-kiskacinda-turkiye.mp3",
-      "date": "2026-03-06"
+      "date": "2026-03-06",
+      "id": "korku-ve-yozlasma-kiskacinda-turkiye",
+      "legacyAnchor": "episode-audio-0"
     }
   ],
   "philosophy": [
