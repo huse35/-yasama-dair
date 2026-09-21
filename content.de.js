@@ -31,10 +31,11 @@ window.YASAMA_DAIR_CONTENT = {
       "description": "Gedanken über die Gesellschaft der Türkei, Angst und Korruption.",
       "notes": "Gedanken über die Gesellschaft der Türkei, Angst und Korruption.",
       "cover": "Fotos.img/yasama-dair.jpg",
-      "audio": "ses/korku-ve-yozlasma-kiskacinda-turkiye.mp3",
+      "audio": "ses/korku-ve-yozlasma-kiskacinda-turkiye.de.mp3",
       "date": "2026-03-06",
       "id": "korku-ve-yozlasma-kiskacinda-turkiye",
-      "legacyAnchor": "episode-audio-0"
+      "legacyAnchor": "episode-audio-0",
+      "audioLabel": "Deutsch"
     }
   ],
   "philosophy": [

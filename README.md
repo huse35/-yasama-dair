@@ -57,7 +57,7 @@ Portre için `Fotos.img/portrait-480.webp`, `portrait-960.webp` ve `portrait-144
 
 ### Sesli çeviriler
 
-“60 Yaş Üzerinde” bölümünün Almanca sesli çevirisi Almanca sayfada oynatılır. İngilizce çevirisi ileride yeniden açılmak üzere korunur. Türkçe asıl kayıt ve Türkçe RSS akışı korunur. Diğer bölümün kaydı Türkçedir. Kaynak dökümü, çeviri metinleri, kullanılan sesler ve yeniden üretim bilgileri `podcast-scripts/README.md` içindedir.
+“60 Yaş Üzerinde” bölümünün Almanca sesli çevirisi Almanca sayfada oynatılır. İngilizce çevirisi ileride yeniden açılmak üzere korunur. Türkçe asıl kayıt ve Türkçe RSS akışı korunur. “Korku ve Yozlaşma Kıskacında Türkiye” bölümünün Almanca sayfasında, kullanıcı tarafından sağlanan Almanca kayıt oynatılır. Türkçe sayfa ve RSS akışı Türkçe kaydı kullanır. Kaynak dökümü, çeviri metinleri, kullanılan sesler ve yeniden üretim bilgileri `podcast-scripts/README.md` içindedir.
 
 ### Yazı veya fotoğraf eklemek
 
