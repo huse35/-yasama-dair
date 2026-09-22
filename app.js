@@ -68,3 +68,29 @@
     window.addEventListener('pageshow', () => { button.innerHTML = initial; button.disabled = false; });
   });
 })();
+
+
+// Felsefe: yalnız seçilen yazıyı göster.
+const writingLinks=[...document.querySelectorAll('[data-writing-link]')];
+const writingPanels=[...document.querySelectorAll('[data-writing-panel]')];
+if(writingLinks.length&&writingPanels.length){
+  const closeAll=()=>{
+    writingPanels.forEach(panel=>panel.hidden=true);
+    writingLinks.forEach(link=>{link.setAttribute('aria-expanded','false');const mark=link.querySelector('.writing-toggle');if(mark)mark.textContent='+';});
+  };
+  const openWriting=(id,scroll=true)=>{
+    const panel=document.getElementById(id);
+    const link=writingLinks.find(item=>item.getAttribute('aria-controls')===id);
+    if(!panel||!link)return;
+    const alreadyOpen=!panel.hidden;
+    closeAll();
+    if(alreadyOpen)return;
+    panel.hidden=false;
+    link.setAttribute('aria-expanded','true');
+    const mark=link.querySelector('.writing-toggle');if(mark)mark.textContent='−';
+    if(scroll)panel.scrollIntoView({behavior:'smooth',block:'start'});
+  };
+  writingLinks.forEach(link=>link.addEventListener('click',event=>{event.preventDefault();const id=link.getAttribute('aria-controls');openWriting(id);history.replaceState(null,'','#'+id);}));
+  const initial=location.hash.slice(1);
+  if(initial&&document.getElementById(initial))openWriting(initial,false);
+}
