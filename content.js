@@ -83,12 +83,5 @@ window.YASAMA_DAIR_CONTENT = {
       "link": null
     }
   ],
-  "comments": [
-    {
-      "name": "Ahmet Yılmaz",
-      "date": "2026-03-07",
-      "message": "Hocam 60 yaş üzerindeki sesli notunuzu dinledim, gerçekten çok etkileyiciydi. Devamını bekliyoruz.",
-      "reply": "Teşekkür ederim Ahmet bey, yaşanmışlıkları paylaşmak niyetimiz. Yeni bölümler yolda, takipte kalın."
-    }
-  ]
+  "comments": []
 };
