@@ -60,6 +60,12 @@ window.YASAMA_DAIR_CONTENT = {
       "title": "Kendini ve Başkalarını Anlamak",
       "file": "writings/kendini-ve-baskalarini-anlamak.txt",
       "image": null
+    },
+    {
+      "date": "2026-09-22",
+      "title": "Tanrı Üzerine Benim Düşüncelerim",
+      "file": "writings/tanri-uzerine-benim-dusuncelerim.txt",
+      "image": null
     }
   ],
   "news": [
