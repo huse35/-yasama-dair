@@ -1540,3 +1540,11 @@ h1,h2,h3 { overflow-wrap: anywhere; }
 .transcript-text { white-space: pre-line; line-height: 1.8; overflow-wrap: anywhere; margin-top: 1rem; }
 .recording-note { border-left: 3px solid var(--accent); padding-left: .8rem; font-size: .9rem; }
 .podcast-card[id], .episode-anchor { scroll-margin-top: 1.5rem; }
+
+
+/* Felsefe yazı aç/kapa */
+.writing-index a { align-items:center; }
+.writing-index .writing-toggle { margin-left:auto; font-size:1.15rem; font-weight:400; color:var(--accent); }
+.writing-index a[aria-expanded="true"] { color:var(--accent); }
+.writing[hidden] { display:none!important; }
+.writing-list:empty { display:none; }
