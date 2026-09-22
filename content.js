@@ -66,6 +66,12 @@ window.YASAMA_DAIR_CONTENT = {
       "title": "Tanrı Üzerine Benim Düşüncelerim",
       "file": "writings/tanri-uzerine-benim-dusuncelerim.txt",
       "image": null
+    },
+    {
+      "date": "2026-09-22",
+      "title": "İyiliği Neden Yapıyoruz?",
+      "file": "writings/iyiligi-neden-yapiyoruz.txt",
+      "image": null
     }
   ],
   "news": [
